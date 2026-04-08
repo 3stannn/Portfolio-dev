@@ -20,6 +20,46 @@ header {
     margin: 10px;
 }
 
+.header-container {
+    padding: 10px;
+    width: 90%;
+    margin: auto;
+}
+
+.button-cv {
+    float: right;
+    margin-top: -45px;
+    align-items: center;
+    font-family: inherit;
+    cursor: pointer;
+    color: #D2A8FF;
+    text-decoration: none;
+
+    border: 1px solid rgba(192, 132, 252, 0.4);
+    border-radius: 999px; /* pill shape */
+
+    background: rgba(192, 132, 252, 0.08);
+
+    backdrop-filter: blur(6px); /* optional glass effect */
+
+    box-shadow: 0 0 15px rgba(192, 132, 252, 0.2); /* soft glow */
+
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.button-cv:hover {
+    background: rgba(192, 132, 252, 0.4);
+    color: white;
+    text-decoration: none;
+}
+
+.button-cv:active {
+    background: rgba(192, 132, 252, 0.4);
+    color: white;
+    text-decoration: none;
+}
+
 .inner {
     color: #D2A8FF;
 }
@@ -108,7 +148,63 @@ header {
 
 .about-container h1 {
     color: white;
-    font-size: 60px;
+    font-size: 40px;
+    margin: 0px;
+    line-height: 1;
+}
+
+.expertise-container {
+    padding: 100px;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+.expertise-container h1 {
+    color: white;
+    font-size: 40px;
+    margin: 0px;
+    line-height: 1;
+}
+
+.work-container {
+    padding: 100px;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+.work-container h1 {
+    color: white;
+    font-size: 40px;
+    margin: 0px;
+    line-height: 1;
+}
+
+.cert-container {
+    padding: 100px;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+.cert-container h1 {
+    color: white;
+    font-size: 40px;
+    margin: 0px;
+    line-height: 1;
+}
+
+.proj-container {
+    padding: 100px;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+.proj-container h1 {
+    color: white;
+    font-size: 40px;
     margin: 0px;
     line-height: 1;
 }
