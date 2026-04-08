@@ -16,19 +16,54 @@ body {
     cursor: url("img/cursor.png"), auto;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+.program:hover {
+    color: #79C0FF;
+}
+
+.university a {
+    color: white;
+    text-decoration: none;
+}
+
+.university a:hover {
+    color: red;
+    text-decoration: none;
+}
+
+.university a:active {
+    color: red;
+    text-decoration: none;
+}
+
 header {
     margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
 }
 
 .header-container {
-    padding: 10px;
+    padding: 10px 16px;
     width: 90%;
+    max-width: 1200px;
     margin: auto;
 }
 
-.button-cv {
-    float: right;
-    margin-top: -45px;
+.button-cv-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 45px;
+}
+
+.button-cv{
+    display: inline-block;
+    float: none;
     align-items: center;
     font-family: inherit;
     cursor: pointer;
@@ -78,8 +113,9 @@ header {
 }
 
 .name-container {
-    padding: 100px;
+    padding: clamp(24px, 7vw, 100px);
     width: 75%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -90,7 +126,7 @@ header {
     padding: 5px 20px;
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-left: 50px;
+    margin-left: clamp(0px, 5vw, 50px);
 
     letter-spacing: 4px; /* spaced text */
 
@@ -111,28 +147,31 @@ header {
 
 .name-container h1{
     color: white;
-    font-size: 100px;
+    font-size: clamp(2rem, 9vw, 6.25rem);
     margin-top: 10px;
-    margin-left: 50px;
+    margin-left: clamp(0px, 5vw, 50px);
     margin-bottom: 10px;
     line-height: 1;
 }
 
 .name-container p.description{
     color: #949494;
-    font-size: 20px;
-    margin-left: 50px;
+    font-size: clamp(1rem, 2.2vw, 1.25rem);
+    margin-left: clamp(0px, 5vw, 50px);
 }
 
 .comment-todo {
     margin-top: 100px;
     color: #949494;
     font-style: italic; 
+    display: block;
+    text-align: right;
 }
 
 .about-container {
-    padding: 100px;
+    padding: clamp(24px, 7vw, 100px);
     width: 75%;
+    max-width: 1200px;
     margin: 0 auto;
     margin-top: 70px;
 }
@@ -143,68 +182,137 @@ header {
 
 .about-text {
     color: white;
-    margin-left: 50px;
+    margin-left: clamp(0px, 5vw, 50px);
+    line-height: 1.7;
 }
 
 .about-container h1 {
     color: white;
-    font-size: 40px;
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
     margin: 0px;
     line-height: 1;
 }
 
 .expertise-container {
-    padding: 100px;
+    padding: clamp(24px, 7vw, 100px);
     width: 75%;
+    max-width: 1200px;
     margin: 0 auto;
     margin-top: 70px;
 }
 
 .expertise-container h1 {
     color: white;
-    font-size: 40px;
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
     margin: 0px;
     line-height: 1;
 }
 
 .work-container {
-    padding: 100px;
+    padding: clamp(24px, 7vw, 100px);
     width: 75%;
+    max-width: 1200px;
     margin: 0 auto;
     margin-top: 70px;
 }
 
 .work-container h1 {
     color: white;
-    font-size: 40px;
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
     margin: 0px;
     line-height: 1;
 }
 
 .cert-container {
-    padding: 100px;
+    padding: clamp(24px, 7vw, 100px);
     width: 75%;
+    max-width: 1200px;
     margin: 0 auto;
     margin-top: 70px;
 }
 
 .cert-container h1 {
     color: white;
-    font-size: 40px;
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
     margin: 0px;
     line-height: 1;
 }
 
 .proj-container {
-    padding: 100px;
+    padding: clamp(24px, 7vw, 100px);
     width: 75%;
+    max-width: 1200px;
     margin: 0 auto;
     margin-top: 70px;
 }
 
 .proj-container h1 {
     color: white;
-    font-size: 40px;
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
     margin: 0px;
     line-height: 1;
+}
+
+@media (max-width: 1024px) {
+    .name-container,
+    .about-container,
+    .expertise-container,
+    .work-container,
+    .cert-container,
+    .proj-container {
+        width: 86%;
+        margin-top: 48px;
+    }
+
+    .comment-todo {
+        margin-top: 56px;
+        text-align: left;
+    }
+}
+
+@media (max-width: 640px) {
+    .header-container {
+        width: 94%;
+        padding: 10px 8px;
+    }
+
+    header {
+        margin: 0;
+        align-items: flex-start;
+    }
+
+    .button-cv {
+        text-align: center;
+        margin-top: 4px;
+        padding: 12px;
+    }
+
+    .name-container,
+    .about-container,
+    .expertise-container,
+    .work-container,
+    .cert-container,
+    .proj-container {
+        width: 94%;
+        padding: 20px 14px;
+        margin-top: 32px;
+    }
+
+    .badge {
+        margin-left: 0;
+        letter-spacing: 2px;
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .name-container h1,
+    .name-container p.description,
+    .about-text {
+        margin-left: 0;
+    }
+
+    .comment-todo {
+        margin-top: 36px;
+        float: none !important;
+    }
 }
