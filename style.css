@@ -1,0 +1,114 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    font-family: "JetBrains Mono", monospace;
+
+    background-color: #0D1117;
+
+    /* this is ai */
+    background-image:
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+
+    background-size: 70px 70px; /* controls box size */
+    /* ---------- */
+
+    cursor: url("img/cursor.png"), auto;
+}
+
+header {
+    margin: 10px;
+}
+
+.inner {
+    color: #D2A8FF;
+}
+
+.inner-orange {
+    color: #F0934E;
+}
+
+.tag-mark {
+    color: #79C0FF;
+}
+
+.comment {
+    color: #949494;
+    font-style: italic; 
+}
+
+.name-container {
+    padding: 100px;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.badge {
+    
+    /* this is ai */
+    display: inline-block;
+    padding: 5px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+
+    letter-spacing: 4px; /* spaced text */
+
+    font-size: 13px;
+
+    color: #D2A8FF;
+
+    border: 1px solid rgba(192, 132, 252, 0.4);
+    border-radius: 999px; /* pill shape */
+
+    background: rgba(192, 132, 252, 0.08);
+
+    backdrop-filter: blur(6px); /* optional glass effect */
+
+    box-shadow: 0 0 15px rgba(192, 132, 252, 0.2); /* soft glow */
+    /* ---------- */
+}
+
+.name-container h1{
+    color: white;
+    font-size: 100px;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    line-height: 1;
+}
+
+.name-container p.description{
+    color: #949494;
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+.comment-todo {
+    margin-top: 100px;
+    color: #949494;
+    font-style: italic; 
+}
+
+.about-container {
+    padding: 100px;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+.string {
+    color: #62BE68;
+}
+
+.about-text {
+    color: white;
+    margin-left: 50px;
+}
+
+.about-container h1 {
+    color: white;
+    font-size: 60px;
+    margin: 0px;
+    line-height: 1;
+}
