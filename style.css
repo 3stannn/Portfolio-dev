@@ -220,6 +220,8 @@ header {
     color: white;
     margin-left: clamp(0px, 5vw, 50px);
     line-height: 1.7;
+    text-align: justify;
+    font-size: 20px;
 }
 
 .about-container h1 {
@@ -333,6 +335,10 @@ header {
         margin-top: 4px;
         margin-left: 6px;
         padding: 12px;
+    }
+
+    .about-text {
+        font-size: 15px;
     }
 
     .name-container,
