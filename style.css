@@ -52,6 +52,10 @@ body, a{
     color: #a551ff;
 }
 
+.light-mode .tag-mark {
+    color: #0088ff;
+}
+
 .program:hover {
     color: #79C0FF;
 }
@@ -219,6 +223,7 @@ header {
 }
 
 .name-container p.description{
+    color: #949494;
     font-size: clamp(1rem, 2.2vw, 1.25rem);
     margin-left: clamp(0px, 5vw, 50px);
 }
