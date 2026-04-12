@@ -29,7 +29,13 @@ body, a{
     box-shadow: 0 0 15px rgba(192, 132, 252, 0.2);
 
     border-radius: 10px;
-    padding: 10px;
+    padding: 5px;
+    padding-bottom: 4px;
+}
+
+.theme-button img {
+    width: 20px;
+    height: auto;
 }
 
 .theme-button:hover {
