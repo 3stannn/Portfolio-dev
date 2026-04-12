@@ -12,7 +12,7 @@ body, a{
 
     background-size: 70px 70px; /* controls box size */
 
-    cursor: url("img/cursor.png"), auto;
+    /* cursor: url("img/cursor.png"), auto; */
 }
 
 * {
@@ -154,6 +154,11 @@ header {
     padding: 10px;
 }
 
+.light-mode .button-socials {
+    color: #a551ff;
+    border: 1px solid rgba(192, 132, 252, 0.651);
+}
+
 .button-socials:hover {
     background: rgba(192, 132, 252, 0.4);
     color: white;
@@ -212,6 +217,11 @@ header {
     backdrop-filter: blur(6px);
 
     box-shadow: 0 0 15px rgba(192, 132, 252, 0.2);
+}
+
+.light-mode .badge {
+    color: #a551ff;
+    border: 1px solid rgba(192, 132, 252, 0.651);
 }
 
 .name-container h1{
@@ -351,7 +361,7 @@ header {
 
     .button-cv-container {
         margin-left: 0px; 
-    }   
+    }
 
     .button-cv {
         text-align: center;
@@ -393,6 +403,10 @@ header {
     .name-container p.description,
     .about-text {
         margin-left: 0;
+    }
+
+    .about-text {
+        text-align: left;
     }
 
     .comment-todo {
