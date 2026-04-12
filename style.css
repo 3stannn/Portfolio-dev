@@ -45,7 +45,7 @@ body, a{
 }
 
 .light-mode .button-socials:hover {
-    color: #0D1117;
+    color: white;
 }
 
 .light-mode .inner {
@@ -60,16 +60,7 @@ body, a{
     color: #79C0FF;
 }
 
-.university a {
-    text-decoration: none;
-}
-
-.university a:hover {
-    color: red;
-    text-decoration: none;
-}
-
-.university a:active {
+.university:hover{
     color: red;
     text-decoration: none;
 }
@@ -94,6 +85,7 @@ header {
     margin-top: 20px;
     margin-left: 45px;
     margin-bottom: 20px;
+    float: ri;
 }
 
 .button-cv{
@@ -258,12 +250,6 @@ header {
     color: #62BE68;
 }
 
-.about-text {
-    margin-left: clamp(0px, 5vw, 50px);
-    line-height: 1.7;
-    text-align: justify;
-    font-size: 20px;
-}
 
 .about-container h1 {
     font-size: clamp(1.8rem, 4vw, 2.5rem);
@@ -377,10 +363,6 @@ header {
         padding: 12px;
     }
 
-    .about-text {
-        font-size: 15px;
-    }
-
     .name-container,
     .about-container,
     .expertise-container,
@@ -400,13 +382,8 @@ header {
     }
 
     .name-container h1,
-    .name-container p.description,
-    .about-text {
+    .name-container p.description {
         margin-left: 0;
-    }
-
-    .about-text {
-        text-align: left;
     }
 
     .comment-todo {
