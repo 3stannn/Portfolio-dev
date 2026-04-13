@@ -42,16 +42,12 @@ body, a{
     background: rgba(192, 132, 252, 0.4);
 }
 
-.light-mode, .light-mode a{
-  background-color: transparent;
+.light-mode{
+  background-color: white;
   color: #0D1117;
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px),
     linear-gradient(90deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
-}
-
-.light-mode .button-socials:hover {
-    color: white;
 }
 
 .light-mode .inner {
@@ -60,15 +56,6 @@ body, a{
 
 .light-mode .tag-mark {
     color: #0088ff;
-}
-
-.program:hover {
-    color: #79C0FF;
-}
-
-.university:hover{
-    color: red;
-    text-decoration: none;
 }
 
 header {
@@ -85,88 +72,6 @@ header {
     width: 90%;
     max-width: 1200px;
     margin: auto;
-}
-
-.button-cv-container {
-    margin-top: 20px;
-    margin-left: 45px;
-    margin-bottom: 20px;
-    float: ri;
-}
-
-.button-cv{
-    display: inline-block;
-    float: none;
-    align-items: center;
-    font-family: inherit;
-    cursor: pointer;
-    color: #D2A8FF;
-    text-decoration: none;
-    margin-left: 45px;
-
-    border: 1px solid rgba(192, 132, 252, 0.4);
-    border-radius: 999px; /* pill shape */
-
-    background: rgba(192, 132, 252, 0.08);
-
-    backdrop-filter: blur(6px); 
-
-    box-shadow: 0 0 15px rgba(192, 132, 252, 0.2);
-
-    border-radius: 10px;
-    padding: 10px;
-}
-
-.button-cv:hover {
-    background: rgba(192, 132, 252, 0.4);
-    color: white;
-    text-decoration: none;
-}
-
-.button-cv:active {
-    background: rgba(192, 132, 252, 0.4);
-    color: white;
-    text-decoration: none;
-}
-
-.button-socials{
-    display: inline-block;
-    float: none;
-    align-items: center;
-    font-family: inherit;
-    cursor: pointer;
-    color: #D2A8FF;
-    text-decoration: none;
-    margin-left: 5px;
-
-    border: 1px solid rgba(192, 132, 252, 0.4);
-    border-radius: 999px; 
-
-    background: rgba(192, 132, 252, 0.08);
-
-    backdrop-filter: blur(6px);
-
-    box-shadow: 0 0 15px rgba(192, 132, 252, 0.2);
-
-    border-radius: 10px;
-    padding: 10px;
-}
-
-.light-mode .button-socials {
-    color: #a551ff;
-    border: 1px solid rgba(192, 132, 252, 0.651);
-}
-
-.button-socials:hover {
-    background: rgba(192, 132, 252, 0.4);
-    color: white;
-    text-decoration: none;
-}
-
-.button-socials:active {
-    background: rgba(192, 132, 252, 0.4);
-    color: white;
-    text-decoration: none;
 }
 
 .inner {
@@ -349,24 +254,6 @@ header {
     header {
         margin: 0;
         align-items: flex-start;
-    }
-
-    .button-cv-container {
-        margin-left: 0px; 
-    }
-
-    .button-cv {
-        text-align: center;
-        margin-top: 4px;
-        margin-left: 6px;
-        padding: 12px;
-    }
-
-    .button-socials {
-        text-align: center;
-        margin-top: 4px;
-        margin-left: 6px;
-        padding: 12px;
     }
 
     .name-container,
