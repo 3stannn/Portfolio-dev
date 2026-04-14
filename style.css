@@ -30,6 +30,26 @@ a {
     box-sizing: border-box;
 }
 
+::selection {
+    background-color: white;
+    color: #020306;
+}
+
+.light-mode ::selection {
+    background-color: #020306;
+    color: white;
+}
+
+.light-mode .card ::selection {
+    background-color: white;
+    color: #020306;
+}
+
+.light-mode .language ::selection {
+    background-color: white;
+    color: #020306;
+}
+
 .theme-button {
     cursor: pointer;
     border: 1px solid rgba(192, 132, 252, 0.4);
