@@ -1,4 +1,4 @@
-const clickSound = new Audio("audio/mouse-click.mp3");
+const clickSound = new Audio("audio/mouse-click.MP3");
 clickSound.preload = "auto";
 
 function themeFunction() {
