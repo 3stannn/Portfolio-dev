@@ -1,3 +1,7 @@
+html, body {
+    height: 100%;
+}
+
 body, a{
     margin: 0%;
     padding: 0%;
@@ -191,7 +195,7 @@ header {
 
 .terminal-text {
     font-size: 15px;
-    font-weight: 50;
+    font-weight: 400;
     color: #949494;
     line-height: 10px;
 }
@@ -341,6 +345,42 @@ header {
     line-height: 1;
 }
 
+footer {
+    text-align: center;
+    background-color: #080A0F;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 0%;
+    padding: 1%;
+}
+
+.footer-text {
+    font-family: "Geist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #9E9EA8;
+}
+
+.footer-text .top-text{
+    color: white;
+    font-weight: 600;
+}
+
+.footer-text .bottom-text a{
+    color: #a551ff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.light-mode footer {
+    background-color: white;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.light-mode .footer-text .top-text {
+    color: #080A0F;
+}
+
 @media (max-width: 1024px) {
     .name-container,
     .about-container,
@@ -402,5 +442,9 @@ header {
     .comment-todo {
         margin-top: 36px;
         float: none !important;
+    }
+
+    .footer-text {
+        font-size: small;
     }
 }
