@@ -15,6 +15,13 @@ body, a{
     /* cursor: url("img/cursor.png"), auto; */
 }
 
+a {
+    margin: 0%;
+    padding: 0%;
+    font-family: "JetBrains Mono", monospace;
+    background: none;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -140,6 +147,19 @@ header {
     color: #949494;
     font-size: clamp(1rem, 2.2vw, 1.25rem);
     margin-left: clamp(0px, 5vw, 50px);
+}
+
+.link-container {
+    margin-left: clamp(0px, 5vw, 50px);
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.link-container img {
+    width: auto;
+    height: 25px;
+    display: block;
 }
 
 .comment-todo {
@@ -357,7 +377,8 @@ header {
     }
 
     .name-container h1,
-    .name-container p.description {
+    .name-container p.description,
+    .link-container {
         margin-left: 0;
     }
 
