@@ -212,15 +212,15 @@ header {
 }
 
 .light-mode .button-cv {
-    background-color: #a551ff;
+    background-color: #0D1117;
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .light-mode .button-cv:hover {
-    background-color: #D2A8FF;
+    background-color: #020306;
 }
 
-.light-mode .button-cv a {
+.light-mode .button-cv a:hover {
     color: white;
 }
 
