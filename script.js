@@ -1,4 +1,6 @@
 function themeFunction() {
+   var audio = new Audio('audio/mouse-click.mp3');
+   audio.play();
    var body = document.body;
    body.classList.toggle("light-mode");
    const icon = document.getElementById("theme-icon");
