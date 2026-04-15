@@ -191,6 +191,11 @@ header {
     text-decoration: none;
 }
 
+.discord-img img{
+    width: 29px;
+    height: auto;
+}
+
 .button-cv {
     width: fit-content;
     min-width: 80px;
@@ -225,7 +230,7 @@ header {
 }
 
 .light-mode .github-img img{
-    border: 1px solid rgba(0, 0, 0, 0.651);
+    border: 1px solid rgb(0, 0, 0);
     border-radius: 100px;
 }
 
