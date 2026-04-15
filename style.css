@@ -413,6 +413,72 @@ header {
     line-height: 1;
 }
 
+.contact-card {
+    background-color: #020306;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.input {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #080A0F;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    font-family: "Geist", sans-serif;
+    color: white;
+}
+
+.light-mode .contact-card label {
+    color: white;
+}
+
+.light-mode .contact-card ::selection {
+    color: #020306;
+    background-color: white;
+}
+
+.input-group {
+    display: grid;
+    gap: 20px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field .input {
+    width: 100%;
+}
+
+.form-field textarea.input {
+    resize: vertical;
+    min-height: 130px;
+}
+
+.submit-email {
+    font-family: "Geist", sans-serif;
+    font-weight: 700;
+    font-size: medium;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.submit-email:hover {
+    color: white;
+    background-color: #a551ff;
+    cursor: pointer;
+}
+
 footer {
     text-align: center;
     background-color: #080A0F;
@@ -427,6 +493,7 @@ footer {
     font-weight: 400;
     font-style: normal;
     color: #9E9EA8;
+    fon
 }
 
 .footer-text .top-text{
@@ -518,6 +585,10 @@ footer {
     }
 
     .footer-text {
-        font-size: smaller;
+        font-size: 10px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
     }
 }
