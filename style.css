@@ -30,26 +30,6 @@ a {
     box-sizing: border-box;
 }
 
-::selection {
-    background-color: white;
-    color: #020306;
-}
-
-.light-mode ::selection {
-    background-color: #020306;
-    color: white;
-}
-
-.light-mode .card ::selection {
-    background-color: white;
-    color: #020306;
-}
-
-.light-mode .language ::selection {
-    background-color: white;
-    color: #020306;
-}
-
 .theme-button {
     cursor: pointer;
     border: 1px solid rgba(192, 132, 252, 0.4);
@@ -203,9 +183,10 @@ header {
     height: 40px;
     justify-content: center;
     align-items: center;
-    background-color: #020306;
-    color: white;
-    font-weight: 600;
+    background-color: white;
+    color: #020306;
+    font-weight: 800;
+    font-size: small;
     border-radius: 10px;
     padding: 0 14px;
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -213,20 +194,19 @@ header {
 
 .button-cv:hover {
     background-color: #0D1117;
+    color: white;
     cursor: pointer;
 }
 
 .light-mode .button-cv {
     background-color: #0D1117;
+    color: white;
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .light-mode .button-cv:hover {
-    background-color: #020306;
-}
-
-.light-mode .button-cv a:hover {
-    color: white;
+    background-color: white;
+    color: #020306;
 }
 
 .light-mode .github-img img{
@@ -408,6 +388,10 @@ header {
     border-radius: 8px;
 }
 
+.cert-card img:hover {
+    opacity: 80%;
+}
+
 .cert-card a{
     text-decoration: none;
     font-family: "Geist", sans-serif;
@@ -423,6 +407,11 @@ header {
     font-family: "Geist", sans-serif;
     color: #949494;
     font-size: small;
+}
+
+.cert-card p::selection {
+    background-color: #F0934E;
+    color: white;
 }
 
 .proj-container {
@@ -472,11 +461,6 @@ header {
 
 .light-mode .contact-card label {
     color: white;
-}
-
-.light-mode .contact-card ::selection {
-    color: #020306;
-    background-color: white;
 }
 
 .input-group {
