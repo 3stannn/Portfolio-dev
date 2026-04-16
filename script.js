@@ -21,3 +21,9 @@ function themeFunction() {
       icon.alt = "Sun icon";
    }
 }
+
+function warnUser() {
+   clickSound.currentTime = 0;
+   clickSound.play().catch(() => {});
+   alert("The email system is currently under development. For now, you can reach me via Discord.")
+}
