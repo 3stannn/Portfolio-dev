@@ -385,6 +385,45 @@ header {
     line-height: 1;
 }
 
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.cert-card {
+    background-color: #020306;
+    width: 100%;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cert-card img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    padding-bottom: 10px;
+    border-radius: 8px;
+}
+
+.cert-card a{
+    text-decoration: none;
+    font-family: "Geist", sans-serif;
+}
+
+.cert-card a:hover {
+    color: #0088ff;
+    text-decoration: underline;
+}
+
+.cert-card p{
+    font-family: "Geist", sans-serif;
+    color: #949494;
+    font-size: small;
+}
+
 .proj-container {
     padding: clamp(24px, 7vw, 100px);
     width: 75%;
@@ -465,6 +504,7 @@ header {
 }
 
 .submit-email {
+    width: 25%;
     font-family: "Geist", sans-serif;
     font-weight: 700;
     font-size: medium;
@@ -534,6 +574,10 @@ footer {
         margin-top: 56px;
         text-align: left;
     }
+
+    .cert-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 640px) {
@@ -585,11 +629,20 @@ footer {
         float: none !important;
     }
 
+    .submit-email {
+        width: 100%;
+    }
+
     .footer-text {
         font-size: 10px;
     }
 
     .form-row {
         grid-template-columns: 1fr;
+    }
+
+    .cert-card {
+        width: 100%;
+        padding: 16px;
     }
 }
