@@ -23,7 +23,25 @@ function themeFunction() {
 }
 
 function warnUser() {
+   event.preventDefault();
+
    clickSound.currentTime = 0;
    clickSound.play().catch(() => {});
+
    alert("The email system is currently under development. For now, you can reach me via Discord.")
+}
+
+function testContact() {
+   event.preventDefault();
+
+   clickSound.currentTime = 0;
+   clickSound.play().catch(() => {});
+
+   const senderName = document.getElementById("name").value
+   const senderEmail = document.getElementById("email").value
+   const message = document.getElementById("message").value
+
+   console.log(senderName)
+   console.log(senderEmail)
+   console.log(message)
 }
