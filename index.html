@@ -23,9 +23,17 @@
     <link rel="shortcut icon" href="img/pfp.jpg" type="image/jpeg">
 </head>
 <body>
-    <div class="header-container">
+    <div class="header-container" id="home">
         <header class="inner">
             <p><span class="tag-mark">&lt</span>Kodekz<span class="tag-mark">/&gt</span></p>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
             <button onclick="themeFunction()" class="theme-button"><img id="theme-icon" src="img/sun.png" alt=""></button>
         </header>
     </div>
@@ -57,7 +65,7 @@
         <span class="comment-todo">//TODO: Turn ideas into functional, real-world systems.</span>
     </div>
 
-    <div class="about-container">
+    <div class="about-container" id="about">
         <span class="tag-mark">&lt</span><span class="inner">section</span><span class="inner-orange"> id</span><span class="tag-mark">=</span><span class="string">"about"</span><span class="tag-mark">&gt</span>
         
         <p><span class="tag-mark">&lt</span><span class="inner">h2</span><span class="tag-mark">&gt</span></p>
@@ -179,7 +187,7 @@
         <span class="tag-mark">&lt/</span><span class="inner">section</span><span class="tag-mark">&gt</span>
     </div>
 
-    <div class="proj-container">
+    <div class="proj-container" id="projects">
         <span class="tag-mark">&lt</span><span class="inner">section</span><span class="inner-orange"> id</span><span class="tag-mark">=</span><span class="string">"projects"</span><span class="tag-mark">&gt</span>
         
         <p><span class="tag-mark">&lt</span><span class="inner">h2</span><span class="tag-mark">&gt</span></p>
@@ -193,7 +201,7 @@
         <span class="tag-mark">&lt/</span><span class="inner">section</span><span class="tag-mark">&gt</span>
     </div>
 
-    <div class="contact-container">
+    <div class="contact-container" id="contact">
         <span class="tag-mark">&lt</span><span class="inner">section</span><span class="inner-orange"> id</span><span class="tag-mark">=</span><span class="string">"contact"</span><span class="tag-mark">&gt</span>
         
         <p><span class="tag-mark">&lt</span><span class="inner">h2</span><span class="tag-mark">&gt</span></p>
@@ -234,6 +242,10 @@
         <p><span class="tag-mark">&lt/</span><span class="inner">h2</span><span class="tag-mark">&gt</span></p>        
         
         <span class="tag-mark">&lt/</span><span class="inner">section</span><span class="tag-mark">&gt</span>
+    </div>
+
+    <div class="scroll-up-container">
+        <a href="#home"><img id="scroll-icon" src="img/dark-mode-arrow.png" alt=""></a>
     </div>
 
     <div>

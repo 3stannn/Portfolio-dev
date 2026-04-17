@@ -20,6 +20,19 @@ function themeFunction() {
       icon.src = "img/sun.png";
       icon.alt = "Sun icon";
    }
+
+   const iconScroll = document.getElementById("scroll-icon")
+   if (!iconScroll) {
+      return;
+   }
+
+   if (body.classList.contains("light-mode")) {
+      iconScroll.src = "img/light-mode-arrow.png";
+      iconScroll.alt = "Moon icon";
+   } else {
+      iconScroll.src = "img/dark-mode-arrow.png";
+      iconScroll.alt = "Sun icon";
+   }
 }
 
 function warnUser() {

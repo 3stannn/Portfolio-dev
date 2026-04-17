@@ -1,5 +1,6 @@
 html, body {
     height: 100%;
+    scroll-behavior: smooth;
 
 }
 
@@ -36,6 +37,44 @@ a {
 
 * {
     box-sizing: border-box;
+}
+
+nav {
+    margin-left: auto;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 6px 10px;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.nav-list li {
+    padding: 0;
+}
+
+.nav-list a{
+    display: block;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    color: inherit;
+    border-radius: 8px;
+}
+
+.nav-list a:hover {
+    color: #D2A8FF;
+}
+
+.light-mode .nav-list {
+    color: #020306;
+    font-weight: 600;
 }
 
 .theme-button {
@@ -88,10 +127,18 @@ header {
 }
 
 .header-container {
-    padding: 10px 16px;
-    width: 90%;
+    width: 100%;
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
+    padding: 10px 16px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #080A0F;
+}
+
+.light-mode .header-container {
+    background-color: white;
 }
 
 .inner {
@@ -238,7 +285,7 @@ header {
     width: 75%;
     max-width: 1200px;
     margin: 0 auto;
-    margin-top: 70px;
+    margin-top: 10px;
 }
 
 .card {
@@ -296,7 +343,7 @@ header {
     width: 75%;
     max-width: 1200px;
     margin: 0 auto;
-    margin-top: 70px;
+    margin-top: 10px;
 }
 
 .expertise-container h1 {
@@ -353,7 +400,7 @@ header {
     width: 75%;
     max-width: 1200px;
     margin: 0 auto;
-    margin-top: 70px;
+    margin-top: 10px;
 }
 
 .work-container h1 {
@@ -367,7 +414,7 @@ header {
     width: 75%;
     max-width: 1200px;
     margin: 0 auto;
-    margin-top: 70px;
+    margin-top: 10px;
 }
 
 .cert-container h1 {
@@ -430,7 +477,7 @@ header {
     width: 75%;
     max-width: 1200px;
     margin: 0 auto;
-    margin-top: 70px;
+    margin-top: 10px;
 }
 
 .proj-container h1 {
@@ -444,7 +491,7 @@ header {
     width: 75%;
     max-width: 1200px;
     margin: 0 auto;
-    margin-top: 70px;
+    margin-top: 10px;
 }
 
 .contact-container h1 {
@@ -517,12 +564,24 @@ header {
     cursor: pointer;
 }
 
+.scroll-up-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scroll-up-container img {
+    width: 30px;
+    height: 30px;
+}
+
 footer {
     text-align: center;
     background-color: #080A0F;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     margin: 0%;
     padding: 1%;
+    margin-top: 30px;
 }
 
 .footer-text {
@@ -554,6 +613,31 @@ footer {
     color: #080A0F;
 }
 
+@media (min-width: 641px) {
+    header {
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        align-items: center;
+    }
+
+    header > p {
+        justify-self: start;
+    }
+
+    nav {
+        grid-column: 2;
+        margin-left: 0;
+    }
+
+    .nav-list {
+        justify-content: center;
+    }
+
+    .theme-button {
+        justify-self: end;
+    }
+}
+
 @media (max-width: 1024px) {
     .name-container,
     .about-container,
@@ -580,15 +664,45 @@ footer {
     .header-container {
         width: 94%;
         padding: 10px 8px;
+        margin-top: 10px;
     }
 
     .theme-button {
-        margin-top: 10px;
+        margin-top: 0;
+        grid-area: toggle;
+        justify-self: end;
     }
 
     header {
         margin: 0;
-        align-items: flex-start;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-template-areas:
+            "brand toggle"
+            "nav nav";
+        align-items: center;
+        gap: 10px;
+    }
+
+    header > p {
+        grid-area: brand;
+        margin: 0;
+    }
+
+    nav {
+        grid-area: nav;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .nav-list {
+        justify-content: center;
+        gap: 6px;
+    }
+
+    .nav-list a {
+        padding: 8px 10px;
+        font-size: 14px;
     }
 
     .button-cv a {
