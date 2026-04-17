@@ -96,6 +96,7 @@ header {
 
 .inner {
     color: #D2A8FF;
+    font-size: smaller;
 }
 
 .inner-orange {
@@ -108,7 +109,8 @@ header {
 
 .comment {
     color: #949494;
-    font-style: italic; 
+    font-style: italic;
+    font-size: smaller;
 }
 
 .name-container {
@@ -228,6 +230,7 @@ header {
     font-style: italic; 
     display: block;
     text-align: right;
+    font-size: smaller;
 }
 
 .about-container {
