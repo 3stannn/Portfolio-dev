@@ -218,7 +218,7 @@
             </div>
             <div>
                 <br>
-                <form class="input-group">
+                <form class="input-group" id="contact-form">
                     <div class="form-row">
                         <div class="form-field">
                             <label for="name">Name<span style="color: #ff000d;">*</span></label>
@@ -230,10 +230,14 @@
                         </div>
                     </div>
                     <div class="form-field">
+                            <label for="name">Subject<span style="color: #ff000d;">*</span></label>
+                            <input class="input" type="text" name="title" id="title" placeholder="What is this about">
+                    </div>
+                    <div class="form-field">
                         <label for="message">Message<span style="color: #ff000d;">*</span></label>
                         <textarea class="input" rows="5" name="message" id="message" placeholder="Message"></textarea>
                     </div>
-                    <button type="button" onclick="warnUser()" class="submit-email">send-email()</button>
+                    <button type="submit" class="submit-email">send-email()</button>
                 </form>
             </div>
          </div>
@@ -258,6 +262,7 @@
         </footer>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
