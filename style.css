@@ -128,17 +128,19 @@ header {
 
 .header-container {
     width: 100%;
-    max-width: 1200px;
     margin: 0 auto;
     padding: 10px 16px;
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: #080A0F;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+
 }
 
 .light-mode .header-container {
-    background-color: white;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(6px);
 }
 
 .inner {
