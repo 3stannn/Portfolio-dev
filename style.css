@@ -592,6 +592,7 @@ footer {
     font-weight: 400;
     font-style: normal;
     color: #9E9EA8;
+    font-size: smaller;
 }
 
 .footer-text .top-text{
@@ -651,6 +652,10 @@ footer {
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.light-mode .fill-card {
+    color: white;
+}
+
 .sent-card h1{
     font-family: "Geist", sans-serif;
     font-size: 20px;
@@ -660,6 +665,11 @@ footer {
     font-family: "Geist", sans-serif;
     font-size: 15px;
     color: #949494;
+}
+
+.light-mode .sent-card {
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .not-sent-modal-container  {
@@ -698,6 +708,7 @@ footer {
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+
 .not-sent-card h1{
     font-family: "Geist", sans-serif;
     font-size: 20px;
@@ -707,6 +718,11 @@ footer {
     font-family: "Geist", sans-serif;
     font-size: 15px;
     color: #949494;
+}
+
+.light-mode .not-sent-card {
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .fill-modal-container  {
@@ -745,6 +761,11 @@ footer {
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.light-mode .fill-card {
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
 .fill-card h1{
     font-family: "Geist", sans-serif;
     font-size: 20px;
@@ -754,6 +775,12 @@ footer {
     font-family: "Geist", sans-serif;
     font-size: 15px;
     color: #949494;
+}
+
+.light-mode .not-sent-card h1,
+.light-mode .sent-card h1,
+.light-mode .fill-card h1 {
+    color: #020306;
 }
 
 @media (min-width: 641px) {
