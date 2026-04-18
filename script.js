@@ -1,6 +1,10 @@
 const clickSound = new Audio("audio/mouse-click.MP3");
 clickSound.preload = "auto";
 
+const sentModalContainer = document.getElementById("sent-modal")
+const notSentModalContainer = document.getElementById("not-sent-modal")
+const fillModalContainer = document.getElementById("fill-modal")
+
 function themeFunction() {
    clickSound.currentTime = 0;
    clickSound.play().catch(() => {});
@@ -57,11 +61,27 @@ function sendEmail() {
       message: document.getElementById("message").value
    };
 
-   if (name || email || title || message === "") {
-      alert("Please fill in all required fields.")
-   } else {
-      emailjs
+   if (
+    !templateParams.name ||
+    !templateParams.email ||
+    !templateParams.title ||
+    !templateParams.message
+  ) {
+    fillModalContainer.classList.add("show")
+    return;
+  }
+
+   emailjs
       .send("service_bq3shtb", "template_8kq8az9", templateParams)
-      .then(() => alert("Email Sent!").catch(() => alert("Email Not Sent!")));
-   }
+      .then(() => sentModalContainer.classList.add("show"))
+      .catch(() => notSentModalContainer.classList.add("show"))
+}
+
+function closeModal() {
+   clickSound.currentTime = 0;
+   clickSound.play().catch(() => {});
+
+   sentModalContainer.classList.remove("show")
+   notSentModalContainer.classList.remove("show")
+   fillModalContainer.classList.remove("show")
 }

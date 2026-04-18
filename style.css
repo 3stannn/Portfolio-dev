@@ -615,6 +615,147 @@ footer {
     color: #080A0F;
 }
 
+.sent-modal-container  {
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.sent-modal-container.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.sent-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.sent-card {
+    background-color: #020306;
+    width: 40%;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sent-card h1{
+    font-family: "Geist", sans-serif;
+    font-size: 20px;
+}
+
+.sent-card p {
+    font-family: "Geist", sans-serif;
+    font-size: 15px;
+    color: #949494;
+}
+
+.not-sent-modal-container  {
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.not-sent-modal-container.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.not-sent-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.not-sent-card {
+    background-color: #020306;
+    width: 40%;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.not-sent-card h1{
+    font-family: "Geist", sans-serif;
+    font-size: 20px;
+}
+
+.not-sent-card p {
+    font-family: "Geist", sans-serif;
+    font-size: 15px;
+    color: #949494;
+}
+
+.fill-modal-container  {
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.fill-modal-container.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.fill-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.fill-card {
+    background-color: #020306;
+    width: 40%;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.fill-card h1{
+    font-family: "Geist", sans-serif;
+    font-size: 20px;
+}
+
+.fill-card p {
+    font-family: "Geist", sans-serif;
+    font-size: 15px;
+    color: #949494;
+}
+
 @media (min-width: 641px) {
     header {
         display: grid;
@@ -742,6 +883,12 @@ footer {
 
     .submit-email {
         width: 100%;
+    }
+
+    .sent-card,
+    .not-sent-card,
+    .fill-card {
+        width: 70%;
     }
 
     .footer-text {
