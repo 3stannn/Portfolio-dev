@@ -130,7 +130,7 @@ header {
     width: 100%;
     margin: 0 auto;
     padding: 10px 16px;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 1000;
     background: rgba(0, 0, 0, 0.1);
@@ -702,7 +702,7 @@ footer {
 
 .not-sent-card {
     background-color: #020306;
-    width: 40%;
+    width: 30%;
     padding: 25px;
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -755,7 +755,7 @@ footer {
 
 .fill-card {
     background-color: #020306;
-    width: 40%;
+    width: 20%;
     padding: 25px;
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -878,7 +878,12 @@ footer {
         font-size: large;
     }
 
-    .name-container,
+    .name-container {
+        margin-top: 100px;
+        width: 94%;
+        padding: 20px 14px;
+    }
+
     .about-container,
     .expertise-container,
     .work-container,
