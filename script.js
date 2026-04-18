@@ -64,7 +64,7 @@ function sendEmail(event) {
       return;
    }
 
-   if (typeof emailjs === "undefined" || EMAILJS_PUBLIC_KEY === "YOUR_EMAILJS_PUBLIC_KEY") {
+   if (typeof emailjs === "undefined" || EMAILJS_PUBLIC_KEY === "ZGCaq8KxwU3V8kL-q") {
       alert("EmailJS is not configured yet. Add your public key in script.js.");
       return;
    }
