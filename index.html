@@ -232,20 +232,20 @@
                     <div class="form-row">
                         <div class="form-field">
                             <label for="name">Name<span style="color: #ff000d;">*</span></label>
-                            <input class="input" type="text" name="name" id="name" placeholder="Your Name">
+                            <input class="input" type="text" name="name" id="name" placeholder="Your Name" required>
                         </div>
                         <div class="form-field">
                             <label for="email">Email<span style="color: #ff000d;">*</span></label>
-                            <input class="input" type="text" name="email" id="email" placeholder="Your @email.com">
+                            <input class="input" type="text" name="email" id="email" placeholder="Your @email.com" required>
                         </div>
                     </div>
                     <div class="form-field">
                             <label for="name">Subject<span style="color: #ff000d;">*</span></label>
-                            <input class="input" type="text" name="title" id="title" placeholder="What is this about">
+                            <input class="input" type="text" name="title" id="title" placeholder="What is this about" required>
                     </div>
                     <div class="form-field">
                         <label for="message">Message<span style="color: #ff000d;">*</span></label>
-                        <textarea class="input" rows="5" name="message" id="message" placeholder="Message"></textarea>
+                        <textarea class="input" rows="5" name="message" id="message" placeholder="Message" required></textarea>
                     </div>
                     <button onclick="sendEmail()" type="submit" class="submit-email">send-email()</button>
                 </form>

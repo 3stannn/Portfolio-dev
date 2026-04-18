@@ -57,7 +57,11 @@ function sendEmail() {
       message: document.getElementById("message").value
    };
 
-   emailjs
-   .send("service_bq3shtb", "template_8kq8az9", templateParams)
-   .then(() => alert("Email Sent!").catch(() => alert("Email Not Sent!")));
+   if (name || email || title || message === "") {
+      alert("Please fill in all required fields.")
+   } else {
+      emailjs
+      .send("service_bq3shtb", "template_8kq8az9", templateParams)
+      .then(() => alert("Email Sent!").catch(() => alert("Email Not Sent!")));
+   }
 }
