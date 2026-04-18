@@ -21,6 +21,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
     <link rel="icon" href="img/pfp.jpg" type="image/jpeg">
     <link rel="shortcut icon" href="img/pfp.jpg" type="image/jpeg">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "ZGCaq8KxwU3V8kL-q",
+        });
+    })();
+    </script>
 </head>
 <body>
     <div class="header-container" id="home">
@@ -237,11 +247,10 @@
                         <label for="message">Message<span style="color: #ff000d;">*</span></label>
                         <textarea class="input" rows="5" name="message" id="message" placeholder="Message"></textarea>
                     </div>
-                    <button onclick="warnUser()" type="submit" class="submit-email">send-email()</button>
+                    <button onclick="sendEmail()" type="submit" class="submit-email">send-email()</button>
                 </form>
             </div>
          </div>
-
 
         <p><span class="tag-mark">&lt/</span><span class="inner">h2</span><span class="tag-mark">&gt</span></p>        
         

@@ -43,3 +43,21 @@ function warnUser() {
 
    alert("The email system is currently under development. For now, you can reach me via Discord.")
 }
+
+function sendEmail() {
+   event.preventDefault();
+
+   clickSound.currentTime = 0;
+   clickSound.play().catch(() => {});
+
+   const templateParams = {
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      title: document.getElementById("title").value,
+      message: document.getElementById("message").value
+   };
+
+   emailjs
+   .send("service_bq3shtb", "template_8kq8az9", templateParams)
+   .then(() => alert("Email Sent!").catch(() => alert("Email Not Sent!")));
+}
