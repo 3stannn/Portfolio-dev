@@ -62,19 +62,24 @@ function sendEmail() {
    };
 
    if (
-    !templateParams.name ||
-    !templateParams.email ||
-    !templateParams.title ||
-    !templateParams.message
+      !templateParams.name ||
+      !templateParams.email ||
+      !templateParams.title ||
+      !templateParams.message
   ) {
-    fillModalContainer.classList.add("show")
-    return;
+      fillModalContainer.classList.add("show")
+      return;
   }
 
    emailjs
       .send("service_bq3shtb", "template_8kq8az9", templateParams)
       .then(() => sentModalContainer.classList.add("show"))
       .catch(() => notSentModalContainer.classList.add("show"))
+   
+   document.getElementById("name").value = ""
+   document.getElementById("email").value = ""
+   document.getElementById("title").value = ""
+   document.getElementById("message").value = ""
 }
 
 function closeModal() {
