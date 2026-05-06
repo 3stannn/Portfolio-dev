@@ -496,6 +496,82 @@ nav {
     line-height: 1;
 }
 
+.proj-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.proj-card {
+    background-color: #020306;
+    width: 100%;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.proj-card img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    padding-bottom: 20px;
+    border-radius: 8px;
+}
+
+.proj-card img:hover {
+    opacity: 80%;
+}
+
+.proj-card a{
+    text-decoration: none;
+    font-family: "Geist", sans-serif;
+    font-weight: 600;
+}
+
+.proj-card a:hover {
+    color: #0088ff;
+    text-decoration: underline;
+}
+
+.proj-card p{
+    font-family: "Geist", sans-serif;
+    color: #949494;
+    font-size: small;
+}
+
+.proj-card p::selection {
+    background-color: #F0934E;
+    color: white;
+}
+
+.tags {
+    display: flex;
+    gap: 10px;
+}
+
+.finance-tag {
+    font-family: "Geist", sans-serif;
+    font-weight: 800;
+    font-size: 0.6rem;
+    border: #62BE68 1px solid;
+    color: #62BE68;
+    border-radius: 20px;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.beta-tag {
+    font-family: "Geist", sans-serif;
+    font-weight: 800;
+    font-size: 0.6rem;
+    border: #F0934E 1px solid;
+    color: #F0934E;
+    border-radius: 15px;
+    margin-top: 10px;
+    padding: 5px;
+}
+
 .contact-container {
     padding: clamp(24px, 7vw, 100px);
     width: 75%;
@@ -834,6 +910,10 @@ footer {
     }
 
     .cert-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .proj-grid {
         grid-template-columns: 1fr;
     }
 }
