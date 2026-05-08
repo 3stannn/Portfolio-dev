@@ -442,7 +442,6 @@ nav {
 .cert-card {
     background-color: #020306;
     width: 100%;
-    padding: 20px;
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -453,7 +452,7 @@ nav {
     height: auto;
     display: block;
     padding-bottom: 20px;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
 .cert-card img:hover {
@@ -482,6 +481,12 @@ nav {
     color: white;
 }
 
+.cert-text {
+    display: block;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 .proj-container {
     padding: clamp(24px, 7vw, 100px);
     width: 75%;
@@ -505,7 +510,6 @@ nav {
 .proj-card {
     background-color: #020306;
     width: 100%;
-    padding: 20px;
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -516,7 +520,7 @@ nav {
     height: auto;
     display: block;
     padding-bottom: 20px;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
 .proj-card img:hover {
@@ -545,7 +549,12 @@ nav {
     color: white;
 }
 
+.proj-text {
+    margin-left: 20px;
+    margin-right: 20px;
+}
 .tags {
+    margin-left: 20px ;
     display: flex;
     gap: 10px;
 }
@@ -1028,6 +1037,5 @@ footer {
 
     .cert-card {
         width: 100%;
-        padding: 16px;
     }
 }
