@@ -174,7 +174,7 @@ nav {
     width: 75%;
     max-width: 1200px;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 50Spx;
 }
 
 .badge {
@@ -310,7 +310,7 @@ nav {
 }
 
 .terminal-text {
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 400;
     color: #949494;
     line-height: 10px;
@@ -348,18 +348,8 @@ nav {
     line-height: 1;
 }
 
-.expertise-container {
-    padding: clamp(24px, 7vw, 100px);
-    width: 75%;
-    max-width: 1200px;
-    margin: 0 auto;
-    margin-top: 10px;
-}
-
-.expertise-container h1 {
-    font-size: clamp(1.8rem, 4vw, 2.5rem);
-    margin: 0px;
-    line-height: 1;
+.about-container h2 {
+    margin-top: 50px;
 }
 
 .languages-container {
@@ -381,7 +371,7 @@ nav {
     background-color: #020306;
     color: white;
     font-weight: 600;
-    border-radius: 0px;
+    border-radius: 8px;
     padding: 0 14px;
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -443,7 +433,6 @@ nav {
     background-color: #020306;
     width: 100%;
     border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .cert-card img{
@@ -511,7 +500,6 @@ nav {
     background-color: #020306;
     width: 100%;
     border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .proj-card img{
@@ -565,7 +553,8 @@ nav {
     font-weight: 800;
     font-size: 0.6rem;
     border: #62BE68 1px solid;
-    color: #62BE68;
+    background-color: rgba(98, 190, 104, 0.5);
+    color: #ffffff;
     border-radius: 20px;
     padding: 10px;
 }
@@ -575,7 +564,8 @@ nav {
     font-weight: 800;
     font-size: 0.6rem;
     border: #F0934E 1px solid;
-    color: #F0934E;
+    background-color: rgba(240, 147, 78, 0.5);
+    color: #ffffff;
     border-radius: 20px;
     padding: 10px;
 }
@@ -903,7 +893,6 @@ footer {
 @media (max-width: 1024px) {
     .name-container,
     .about-container,
-    .expertise-container,
     .work-container,
     .cert-container,
     .proj-container,
@@ -988,7 +977,6 @@ footer {
     }
 
     .about-container,
-    .expertise-container,
     .work-container,
     .cert-container,
     .proj-container,
@@ -1009,6 +997,10 @@ footer {
     .name-container p.description,
     .link-container {
         margin-left: 0;
+    }
+
+    .terminal-text {
+        font-size: 16px;
     }
 
     .comment-todo {
