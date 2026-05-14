@@ -16,14 +16,14 @@ body, a{
     padding: 0%;
     font-family: "JetBrains Mono", monospace;
 
-    background-color: #080A0F;
+    background-color: #0D1117;
     color: white;
 
     background-image:
         linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
         linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
 
-    background-size: 70px 70px; /* controls box size */
+    background-size: 50px 50px; /* controls box size */
 
     /* cursor: url("img/cursor.png"), auto; */
 }
@@ -194,7 +194,7 @@ nav {
     border: 1px solid rgba(192, 132, 252, 0.4);
     border-radius: 999px;
 
-    background: rgba(192, 132, 252, 0.08);
+    background: rgba(192, 132, 252, 0.1);
 
     backdrop-filter: blur(6px);
 
@@ -203,6 +203,7 @@ nav {
 
 .light-mode .badge {
     color: #a551ff;
+    background: rgba(192, 132, 252, 0.2);
     border: 1px solid rgba(192, 132, 252, 0.651);
 }
 
@@ -312,7 +313,7 @@ nav {
 }
 
 .light-mode .terminal-text {
-    color: #0D1117;
+    color: #949494;
 }
 
 .card p {
@@ -444,6 +445,7 @@ nav {
     background-color: #020306;
     width: 100%;
     border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .light-mode .cert-card {
@@ -509,6 +511,12 @@ nav {
     background-color: #020306;
     width: 100%;
     border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.light-mode .proj-card {
+    background-color: #ecebeb;
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .proj-card img{
@@ -524,10 +532,18 @@ nav {
     opacity: 80%;
 }
 
+.light-mode .proj-card img:hover {
+    opacity: 95%;
+}
+
 .proj-card a{
     text-decoration: none;
     font-family: "Geist", sans-serif;
     font-weight: 600;
+}
+
+.light-mode .proj-card a{
+    color: #0D1117;
 }
 
 .proj-card a:hover {
@@ -568,6 +584,10 @@ nav {
     padding: 10px;
 }
 
+.light-mode .finance-tag {
+    background-color: rgba(98, 190, 104, 0.8);
+}
+
 .beta-tag {
     font-family: "Geist", sans-serif;
     font-weight: 800;
@@ -577,6 +597,11 @@ nav {
     color: #ffffff;
     border-radius: 20px;
     padding: 10px;
+}
+
+.light-mode .beta-tag {
+    background-color: rgba(240, 147, 78, 0.8);
+
 }
 
 .contact-container {
