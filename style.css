@@ -250,7 +250,7 @@ nav {
     height: 40px;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: #ecebeb;
     color: #020306;
     font-weight: 800;
     font-size: small;
@@ -261,18 +261,18 @@ nav {
 
 .button-cv:hover {
     background-color: #0D1117;
-    color: white;
+    color: #ecebeb;
     cursor: pointer;
 }
 
 .light-mode .button-cv {
     background-color: #0D1117;
-    color: white;
+    color: #ecebeb;
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .light-mode .button-cv:hover {
-    background-color: white;
+    background-color: #ecebeb;
     color: #020306;
 }
 
@@ -303,6 +303,16 @@ nav {
     padding: 25px;
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.light-mode .card {
+    background-color: #ecebeb;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+}
+
+.light-mode .terminal-text {
+    color: #0D1117;
 }
 
 .card p {
@@ -377,8 +387,9 @@ nav {
 }
 
 .light-mode .language {
-    background-color: #0D1117;
-    color: white;
+    background-color: #ecebeb;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #0D1117;
 }
 
 .language p {
@@ -435,17 +446,14 @@ nav {
     border-radius: 10px;
 }
 
-.cert-card img{
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    display: block;
-    padding-bottom: 20px;
-    border-radius: 8px;
+.light-mode .cert-card {
+    background-color: #ecebeb;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
 }
 
-.cert-card img:hover {
-    opacity: 80%;
+.light-mode .cert-card a {
+    color: #0D1117;
 }
 
 .cert-card a{
@@ -472,6 +480,7 @@ nav {
 
 .cert-text {
     display: block;
+    margin-top: 20px;
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -591,6 +600,11 @@ nav {
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.light-mode .contact-card {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #ecebeb;
+}
+
 .input {
     margin-top: 10px;
     padding: 10px;
@@ -601,8 +615,12 @@ nav {
     color: white;
 }
 
+.light-mode .input {
+    background-color: white;
+}
+
 .light-mode .contact-card label {
-    color: white;
+    color: #0D1117;
 }
 
 .input-group {
@@ -643,6 +661,17 @@ nav {
 }
 
 .submit-email:hover {
+    color: white;
+    background-color: #a551ff;
+    cursor: pointer;
+}
+
+.light-mode .submit-email {
+    background-color: #020306;
+    color: white;
+}
+
+.light-mode .submit-email:hover {
     color: white;
     background-color: #a551ff;
     cursor: pointer;
