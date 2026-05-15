@@ -39,6 +39,20 @@ function themeFunction() {
    }
 }
 
+function clearInput() {
+   const templateParams = {
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      title: document.getElementById("title").value,
+      message: document.getElementById("message").value
+   };
+
+   document.getElementById("name").value = ""
+   document.getElementById("email").value = ""
+   document.getElementById("title").value = ""
+   document.getElementById("message").value = ""
+}
+ 
 function warnUser() {
    event.preventDefault();
 
