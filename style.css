@@ -16,16 +16,17 @@ body, a{
     padding: 0%;
     font-family: "JetBrains Mono", monospace;
 
-    background-color: #080A0F;
+    background-color: #0A0A0A;
     color: white;
 
     background-image:
         linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+        linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(135deg, #07122698 0%, #252525 50%, #2b2b2b83 100%);
 
-    background-size: 60px 60px; /* controls box size */
-
-    /* cursor: url("img/cursor.png"), auto; */
+    background-size: 60px 60px, 60px 60px, cover;
+    background-repeat: repeat, repeat, no-repeat;
+    background-attachment: fixed;
 }
 
 a {
@@ -65,7 +66,7 @@ a {
 
 .light-mode{
   background-color: white;
-  color: #080A0F;
+  color: #0A0A0A;
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px),
     linear-gradient(90deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
@@ -108,7 +109,7 @@ header {
 }
 
 .light-mode .header-container {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(234, 236, 239, 0.5);
     backdrop-filter: blur(6px);
 }
 
@@ -146,7 +147,7 @@ nav {
 }
 
 .light-mode .nav-list {
-    color: #020306;
+    color: #0A0A0A;
     font-weight: 600;
 }
 
@@ -253,8 +254,8 @@ nav {
     height: 40px;
     justify-content: center;
     align-items: center;
-    background-color: #ecebeb;
-    color: #020306;
+    background-color: #EAECEF;
+    color: #0A0A0A;
     font-weight: 800;
     font-size: small;
     border-radius: 10px;
@@ -264,19 +265,19 @@ nav {
 
 .button-cv:hover {
     background-color: #0D1117;
-    color: #ecebeb;
+    color: #EAECEF;
     cursor: pointer;
 }
 
 .light-mode .button-cv {
     background-color: #0D1117;
-    color: #ecebeb;
+    color: #EAECEF;
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .light-mode .button-cv:hover {
-    background-color: #ecebeb;
-    color: #020306;
+    background-color: #EAECEF;
+    color: #0A0A0A;
 }
 
 .light-mode .github-img img{
@@ -301,14 +302,14 @@ nav {
 }
 
 .card {
-    background-color: #020306;
+    background-color: #0A0A0A;
     padding: 25px;
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .light-mode .card {
-    background-color: #ecebeb;
+    background-color: #EAECEF;
     border: 1px solid rgba(0, 0, 0, 0.1);
 
 }
@@ -382,7 +383,7 @@ nav {
     height: 40px;
     justify-content: center;
     align-items: center;
-    background-color: #020306;
+    background-color: #0A0A0A;
     color: white;
     font-weight: 600;
     border-radius: 8px;
@@ -392,19 +393,19 @@ nav {
 }
 
 .language:hover {
-    background-color: #02030673;
+    background-color: #141518;
     border: 1px solid rgba(255, 255, 255, 0.2);
     transform: translateY(-5px);
 }
 
 .light-mode .language {
-    background-color: #ecebeb;
+    background-color: #EAECEF;
     border: 1px solid rgba(0, 0, 0, 0.1);
     color: #0D1117;
 }
 
 .light-mode .language:hover {
-    background-color: #ecebebc5;
+    background-color: #EAECEFc5;
     border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
@@ -458,7 +459,7 @@ nav {
 }
 
 .cert-card {
-    background-color: #020306;
+    background-color: #0A0A0A;
     width: 100%;
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -466,18 +467,18 @@ nav {
 }
 
 .cert-card:hover {
-    background-color: #02030673;
+    background-color: #141518;
     border: 1px solid rgba(255, 255, 255, 0.2);
     transform: translateY(-5px);
 }
 
 .light-mode .cert-card {
-    background-color: #ecebeb;
+    background-color: #EAECEF;
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .light-mode .cert-card:hover {
-    background-color: #ecebebc5;
+    background-color: #EAECEFc5;
     border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
@@ -535,7 +536,7 @@ nav {
 }
 
 .proj-card {
-    background-color: #020306;
+    background-color: #0A0A0A;
     width: 100%;
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -546,12 +547,12 @@ nav {
 }
 
 .light-mode .proj-card {
-    background-color: #ecebeb;
+    background-color: #EAECEF;
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .light-mode .proj-card:hover {
-    background-color: #ecebebc5;
+    background-color: #EAECEFc5;
     border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
@@ -652,7 +653,7 @@ nav {
 }
 
 .social-card {
-    background-color: #020306;
+    background-color: #0A0A0A;
     width: 70%;
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -660,17 +661,29 @@ nav {
     margin-bottom: 20px;
 }
 
+.social-text {
+    font-weight: 700;
+    display: block;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 .light-mode .social-card {
-    background-color: #ecebeb;
+    background-color: #EAECEF;
     border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.light-mode .social-card:hover {
+    background-color: #EAECEFc5;
 }
 
 .light-mode .social-card a {
     color: #0D1117;
-    font-weight: 500;
 }
 
 .social-card:hover {
+    background-color: #141518;
     transform: translateY(-5px);
 }
 
@@ -695,21 +708,26 @@ nav {
 }
 
 .contact-card {
-    background-color: #020306;
+    background-color: #0A0A0A;
     padding: 25px;
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.contact-card label {
+    font-family: "Geist", sans-serif;
+    font-weight: 500;
+}
+
 .light-mode .contact-card {
     border: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: #ecebeb;
+    background-color: #EAECEF;
 }
 
 .input {
     margin-top: 10px;
     padding: 10px;
-    background-color: #080A0F;
+    background-color: #0A0A0A;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     font-family: "Geist", sans-serif;
@@ -759,20 +777,22 @@ nav {
     font-weight: 700;
     font-size: medium;
     background-color: white;
-    color: #020306;
+    color: #0A0A0A;
     padding: 10px;
     border-radius: 10px;
     border: none;
+    transition: transform 0.3s ease;
 }
 
 .submit-email:hover {
+    transform: translateY(-5px);
     color: white;
     background-color: #a551ff;
     cursor: pointer;
 }
 
 .light-mode .submit-email {
-    background-color: #020306;
+    background-color: #0A0A0A;
     color: white;
 }
 
@@ -795,7 +815,7 @@ nav {
 
 footer {
     text-align: center;
-    background-color: #080A0F;
+    background-color: #0A0A0A;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     margin: 0%;
     padding: 1%;
@@ -824,12 +844,12 @@ footer {
 }
 
 .light-mode footer {
-    background-color: white;
+    background-color: #EAECEF;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .light-mode .footer-text .top-text {
-    color: #080A0F;
+    color: #0A0A0A;
 }
 
 .sent-modal-container  {
@@ -861,7 +881,7 @@ footer {
 }
 
 .sent-card {
-    background-color: #020306;
+    background-color: #0A0A0A;
     width: 40%;
     padding: 25px;
     border-radius: 12px;
@@ -917,7 +937,7 @@ footer {
 }
 
 .not-sent-card {
-    background-color: #020306;
+    background-color: #0A0A0A;
     width: 30%;
     padding: 25px;
     border-radius: 12px;
@@ -970,7 +990,7 @@ footer {
 }
 
 .fill-card {
-    background-color: #020306;
+    background-color: #0A0A0A;
     width: 20%;
     padding: 25px;
     border-radius: 12px;
@@ -996,7 +1016,7 @@ footer {
 .light-mode .not-sent-card h1,
 .light-mode .sent-card h1,
 .light-mode .fill-card h1 {
-    color: #020306;
+    color: #0A0A0A;
 }
 
 @media (min-width: 641px) {
@@ -1041,6 +1061,18 @@ footer {
 
     h2 {
         font-size: 20px;
+    }
+
+    .contact-grid {
+        margin-top: 10px;
+    }
+
+    .social-card {
+        width: 90%;
+    }
+
+    .submit-email {
+        width: 60%;
     }
 
     .comment-todo {
