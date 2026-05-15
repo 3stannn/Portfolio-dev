@@ -210,6 +210,8 @@ nav {
 .name-container h1{
     font-size: clamp(2rem, 4vw, 6.25rem);
     margin-top: 10px;
+    font-family: "Geist", sans-serif;
+    font-size: 100px;
     margin-left: clamp(0px, 5vw, 50px);
     margin-bottom: 10px;
     line-height: 1;
@@ -386,12 +388,24 @@ nav {
     border-radius: 8px;
     padding: 0 14px;
     border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.language:hover {
+    background-color: #02030673;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
 }
 
 .light-mode .language {
     background-color: #ecebeb;
     border: 1px solid rgba(0, 0, 0, 0.1);
     color: #0D1117;
+}
+
+.light-mode .language:hover {
+    background-color: #ecebebc5;
+    border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .language p {
@@ -448,12 +462,23 @@ nav {
     width: 100%;
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.cert-card:hover {
+    background-color: #02030673;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
 }
 
 .light-mode .cert-card {
     background-color: #ecebeb;
     border: 1px solid rgba(0, 0, 0, 0.1);
+}
 
+.light-mode .cert-card:hover {
+    background-color: #ecebebc5;
+    border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .light-mode .cert-card a {
@@ -516,9 +541,19 @@ nav {
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.proj-card:hover {
+    background-color: #02030673;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
 .light-mode .proj-card {
     background-color: #ecebeb;
     border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.light-mode .proj-card:hover {
+    background-color: #ecebebc5;
+    border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .proj-card img{
@@ -613,6 +648,46 @@ nav {
     margin: 0 auto;
 }
 
+.social-container {
+    font-family: "Geist", sans-serif;
+}
+
+.social-card {
+    background-color: #020306;
+    width: 70%;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.light-mode .social-card {
+    background-color: #ecebeb;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.light-mode .social-card a {
+    color: #0D1117;
+    font-weight: 500;
+}
+
+.social-card:hover {
+    transform: translateY(-5px);
+}
+
+.social-card a {
+    font-family: "Geist", sans-serif;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
 .contact-container h1 {
     font-size: clamp(1.8rem, 4vw, 2.5rem);
     font-family: "Geist", sans-serif;
@@ -680,7 +755,7 @@ nav {
 }
 
 .submit-email {
-    width: 25%;
+    width: 40%;
     font-family: "Geist", sans-serif;
     font-weight: 700;
     font-size: medium;
@@ -961,6 +1036,14 @@ footer {
         margin-top: 48px;
     }
 
+    .name-container h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
     .comment-todo {
         margin-top: 56px;
         text-align: left;
@@ -1036,6 +1119,10 @@ footer {
         padding: 20px 14px;
     }
 
+    .name-container h1 {
+        font-size: 50px;
+    }
+
     .about-container,
     .work-container,
     .cert-container,
@@ -1078,11 +1165,19 @@ footer {
         width: 70%;
     }
 
+    .social-card {
+        width: 100%;
+    }
+
     .footer-text {
         font-size: 10px;
     }
 
     .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-grid {
         grid-template-columns: 1fr;
     }
 

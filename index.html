@@ -226,38 +226,55 @@
         <h1>Contact me</h1>
         <br>
         <span class="comment">// Get in touch before I write another line of code!</span>
-        <br><br>
-        <div class="contact-card">
+        <div class="contact-grid">
+            <div class="social-container">
+                <h2>Social Links</h2>
+                <div class="social-card">
+                    <a class="cert-text"target="_blank" href="https://github.com/3stannn">GitHub</a>
+                </div>
+                <div class="social-card">
+                    <a class="cert-text" target="_blank" href="https://www.linkedin.com/in/thristan-dave-bumagat-86356129a/">Linkedin</a>
+                </div>
+                <div class="social-card">
+                    <a class="cert-text" target="_blank" href="https://discordapp.com/users/662096336161603602">Discord</a>
+                </div>
+                <h2>Get in Touch</h2>
+                <div class="social-card">
+                    <a class="cert-text" href="#contact">thristandave12@gmail.com</a>
+                </div>
+            </div>
+            <div class="contact-card">
             <div class="card-controls">
                 <button style="background-color: #c7222a;"></button>
                 <button style="background-color: #c28f02;"></button>
                 <button style="background-color: #018D3A;"></button>
             </div>
-            <div>
+                <div>
                 <br>
-                <form class="input-group" id="contact-form">
-                    <div class="form-row">
-                        <div class="form-field">
-                            <label for="name">Name<span style="color: #ff000d;">*</span></label>
-                            <input class="input" type="text" name="name" id="name" placeholder="Your Name" required>
+                    <form class="input-group" id="contact-form">
+                        <div class="form-row">
+                            <div class="form-field">
+                                <label for="name">Name<span style="color: #ff000d;">*</span></label>
+                                <input class="input" type="text" name="name" id="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-field">
+                                <label for="email">Email<span style="color: #ff000d;">*</span></label>
+                                <input class="input" type="text" name="email" id="email" placeholder="Your @email.com" required>
+                            </div>
                         </div>
                         <div class="form-field">
-                            <label for="email">Email<span style="color: #ff000d;">*</span></label>
-                            <input class="input" type="text" name="email" id="email" placeholder="Your @email.com" required>
+                                <label for="name">Subject<span style="color: #ff000d;">*</span></label>
+                                <input class="input" type="text" name="title" id="title" placeholder="What is this about" required>
                         </div>
-                    </div>
-                    <div class="form-field">
-                            <label for="name">Subject<span style="color: #ff000d;">*</span></label>
-                            <input class="input" type="text" name="title" id="title" placeholder="What is this about" required>
-                    </div>
-                    <div class="form-field">
-                        <label for="message">Message<span style="color: #ff000d;">*</span></label>
-                        <textarea class="input" rows="5" name="message" id="message" placeholder="Message" required></textarea>
-                    </div>
-                    <button onclick="sendEmail()" type="submit" class="submit-email">send-email()</button>
-                </form>
+                        <div class="form-field">
+                            <label for="message">Message<span style="color: #ff000d;">*</span></label>
+                            <textarea class="input" rows="5" name="message" id="message" placeholder="Message" required></textarea>
+                        </div>
+                        <button onclick="sendEmail()" type="submit" class="submit-email">send-email()</button>
+                    </form>
+                </div>
             </div>
-         </div>
+        </div>
 
          <div class="sent-modal-container" id="sent-modal">
             <div class="sent-modal">
