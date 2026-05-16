@@ -658,15 +658,27 @@ nav {
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     transition: transform 0.3s ease;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
-.social-text {
-    font-weight: 700;
+.social-card p {
+    font-weight: 200;
+    font-size: 15px;
     display: block;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-left: 20px;
     margin-right: 20px;
+    margin-bottom: 2px;
+}
+
+.social-card a {
+    font-weight: 400;
+    display: block;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: "JetBrains Mono", monospace;
+    text-decoration: none;
+    margin-bottom: 20px;
 }
 
 .light-mode .social-card {
@@ -685,13 +697,6 @@ nav {
 .social-card:hover {
     background-color: #141518;
     transform: translateY(-5px);
-}
-
-.social-card a {
-    font-family: "Geist", sans-serif;
-    text-decoration: none;
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 .contact-grid {
