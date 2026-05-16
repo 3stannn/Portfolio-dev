@@ -540,6 +540,7 @@ nav {
     width: 100%;
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.1);
+    overflow: hidden;
 }
 
 .proj-card:hover {
@@ -563,10 +564,13 @@ nav {
     display: block;
     padding-bottom: 20px;
     border-radius: 8px;
+    object-fit: cover;
+    transition: transform .5s ease;
 }
 
 .proj-card img:hover {
     opacity: 80%;
+    transform: scale(1.02);
 }
 
 .light-mode .proj-card img:hover {
@@ -618,7 +622,7 @@ nav {
     background-color: rgba(98, 190, 104, 0.5);
     color: #ffffff;
     border-radius: 20px;
-    padding: 10px;
+    padding: 5px;
 }
 
 .light-mode .finance-tag {
@@ -633,7 +637,7 @@ nav {
     background-color: rgba(240, 147, 78, 0.5);
     color: #ffffff;
     border-radius: 20px;
-    padding: 10px;
+    padding: 5px;
 }
 
 .light-mode .beta-tag {
