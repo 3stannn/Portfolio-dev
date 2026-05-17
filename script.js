@@ -130,3 +130,10 @@ function closeModal() {
    notSentModalContainer.classList.remove("show")
    fillModalContainer.classList.remove("show")
 }
+
+function chatBot() {
+   clickSound.currentTime = 0;
+   clickSound.play().catch(() => {});
+
+   alert("Still Under Development")
+}
