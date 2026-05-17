@@ -1070,6 +1070,12 @@ footer {
     }
 }
 
+@media (max-width: 1200px) {
+    .social-card {
+        width: 90%;
+    }
+}
+
 @media (max-width: 1024px) {
     .name-container,
     .about-container,
