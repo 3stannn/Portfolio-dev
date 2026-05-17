@@ -140,10 +140,12 @@ nav {
     text-decoration: none;
     color: inherit;
     border-radius: 8px;
+    transition: transform 0.3s ease;
 }
 
 .nav-list a:hover {
     color: #D2A8FF;
+    transform: translateY(-5px);
 }
 
 .light-mode .nav-list {
@@ -200,6 +202,12 @@ nav {
     backdrop-filter: blur(6px);
 
     box-shadow: 0 0 15px rgba(192, 132, 252, 0.2);
+
+    transition: transform 0.3s ease;
+}
+
+.badge:hover {
+    transform: translateY(-5px);
 }
 
 .light-mode .badge {
@@ -236,6 +244,11 @@ nav {
     width: auto;
     height: 25px;
     display: block;
+    transition: transform 0.3s ease;
+}
+
+.link-container img:hover {
+    transform: translateY(-5px);
 }
 
 .link-container a {
@@ -261,12 +274,14 @@ nav {
     border-radius: 10px;
     padding: 0 14px;
     border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
 }
 
 .button-cv:hover {
     background-color: #0D1117;
     color: #EAECEF;
     cursor: pointer;
+    transform: translateY(-5px);
 }
 
 .light-mode .button-cv {
