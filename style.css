@@ -628,8 +628,8 @@ nav {
 
 .finance-tag {
     font-family: "Geist", sans-serif;
-    font-weight: 600;
-    font-size: 0.75rem;
+    font-weight: 500;
+    font-size: 0.6rem;
     border: #62BE68 1px solid;
     background-color: rgba(98, 190, 104, 0.5);
     color: #ffffff;
@@ -643,8 +643,8 @@ nav {
 
 .beta-tag {
     font-family: "Geist", sans-serif;
-    font-weight: 600;
-    font-size: 0.75rem;
+    font-weight: 500;
+    font-size: 0.6rem;
     border: #F0934E 1px solid;
     background-color: rgba(240, 147, 78, 0.5);
     color: #ffffff;
