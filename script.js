@@ -37,6 +37,32 @@ function themeFunction() {
       iconScroll.src = "img/dark-mode-arrow.png";
       iconScroll.alt = "Sun icon";
    }
+
+   const githubIcon = document.getElementById("github-icon")
+   if (!githubIcon) {
+      return;
+   }
+
+   if (body.classList.contains("light-mode")) {
+      githubIcon.src = "img/github-light.png";
+      githubIcon.alt = "GitHub Logo";
+   } else {
+      githubIcon.src = "img/github.png";
+      githubIcon.alt = "GitHub Logo";
+   }
+
+   const githubIcon2 = document.getElementById("github-icon2")
+   if (!githubIcon2) {
+      return;
+   }
+
+   if (body.classList.contains("light-mode")) {
+      githubIcon2.src = "img/github-light.png";
+      githubIcon2.alt = "GitHub Logo";
+   } else {
+      githubIcon2.src = "img/github.png";
+      githubIcon2.alt = "GitHub Logo";
+   }
 }
 
 function clearInput() {

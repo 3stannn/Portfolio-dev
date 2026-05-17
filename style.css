@@ -295,11 +295,6 @@ nav {
     color: #0A0A0A;
 }
 
-.light-mode .github-img img{
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 100px;
-}
-
 .comment-todo {
     margin-top: 100px;
     color: #949494;
