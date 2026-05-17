@@ -155,7 +155,7 @@ nav {
 
 .inner {
     color: #D2A8FF;
-    font-size: smaller;
+    font-size: 0.875rem;
 }
 
 .inner-orange {
@@ -169,7 +169,7 @@ nav {
 .comment {
     color: #949494;
     font-style: italic;
-    font-size: smaller;
+    font-size: 0.875rem;
 }
 
 .name-container {
@@ -190,7 +190,7 @@ nav {
 
     letter-spacing: 4px;
 
-    font-size: 13px;
+    font-size: 1rem;
 
     color: #D2A8FF;
 
@@ -220,7 +220,7 @@ nav {
     font-size: clamp(2rem, 4vw, 6.25rem);
     margin-top: 10px;
     font-family: "Geist", sans-serif;
-    font-size: 100px;
+    font-size: 6.25rem;
     margin-left: clamp(0px, 5vw, 50px);
     margin-bottom: 10px;
     line-height: 1;
@@ -270,7 +270,7 @@ nav {
     background-color: #EAECEF;
     color: #0A0A0A;
     font-weight: 800;
-    font-size: small;
+    font-size: 1rem;
     border-radius: 10px;
     padding: 0 14px;
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -306,7 +306,7 @@ nav {
     font-style: italic; 
     display: block;
     text-align: right;
-    font-size: smaller;
+    font-size: 0.875rem;
 }
 
 .about-container {
@@ -338,7 +338,7 @@ nav {
 }
 
 .terminal-text {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
     color: #949494;
     line-height: 10px;
@@ -400,6 +400,7 @@ nav {
     align-items: center;
     background-color: #0A0A0A;
     color: white;
+    font-size: 1rem;
     font-weight: 600;
     border-radius: 8px;
     padding: 0 14px;
@@ -515,7 +516,7 @@ nav {
 .cert-card p{
     font-family: "Geist", sans-serif;
     color: #949494;
-    font-size: small;
+    font-size: 1rem;
 }
 
 .cert-card p::selection {
@@ -594,6 +595,7 @@ nav {
 
 .proj-card a{
     text-decoration: none;
+    font-size: 1rem;
     font-family: "Geist", sans-serif;
     font-weight: 600;
 }
@@ -610,7 +612,7 @@ nav {
 .proj-card p{
     font-family: "Geist", sans-serif;
     color: #949494;
-    font-size: small;
+    font-size: 1rem;
 }
 
 .proj-card p::selection {
@@ -631,8 +633,8 @@ nav {
 
 .finance-tag {
     font-family: "Geist", sans-serif;
-    font-weight: 800;
-    font-size: 0.6rem;
+    font-weight: 600;
+    font-size: 0.75rem;
     border: #62BE68 1px solid;
     background-color: rgba(98, 190, 104, 0.5);
     color: #ffffff;
@@ -646,8 +648,8 @@ nav {
 
 .beta-tag {
     font-family: "Geist", sans-serif;
-    font-weight: 800;
-    font-size: 0.6rem;
+    font-weight: 600;
+    font-size: 0.75rem;
     border: #F0934E 1px solid;
     background-color: rgba(240, 147, 78, 0.5);
     color: #ffffff;
@@ -682,7 +684,7 @@ nav {
 
 .social-card p {
     font-weight: 200;
-    font-size: 15px;
+    font-size: 1rem;
     display: block;
     margin-top: 10px;
     margin-left: 20px;
@@ -799,7 +801,7 @@ nav {
     width: 40%;
     font-family: "Geist", sans-serif;
     font-weight: 700;
-    font-size: medium;
+    font-size: 0.875rem;
     background-color: white;
     color: #0A0A0A;
     padding: 10px;
@@ -852,7 +854,7 @@ footer {
     font-weight: 400;
     font-style: normal;
     color: #9E9EA8;
-    font-size: smaller;
+    font-size: 0.875rem;
 }
 
 .footer-text .top-text{
@@ -918,12 +920,12 @@ footer {
 
 .sent-card h1{
     font-family: "Geist", sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .sent-card p {
     font-family: "Geist", sans-serif;
-    font-size: 15px;
+    font-size: 1rem;
     color: #949494;
 }
 
@@ -971,12 +973,12 @@ footer {
 
 .not-sent-card h1{
     font-family: "Geist", sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .not-sent-card p {
     font-family: "Geist", sans-serif;
-    font-size: 15px;
+    font-size: 1rem;
     color: #949494;
 }
 
@@ -1028,12 +1030,12 @@ footer {
 
 .fill-card h1{
     font-family: "Geist", sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .fill-card p {
     font-family: "Geist", sans-serif;
-    font-size: 15px;
+    font-size: 1rem;
     color: #949494;
 }
 
@@ -1080,11 +1082,15 @@ footer {
     }
 
     .name-container h1 {
-        font-size: 50px;
+        font-size: 2.75rem;
     }
 
     h2 {
-        font-size: 20px;
+        font-size: 1.25rem;
+    }
+
+    .terminal-text {
+        font-size: 1.1rem;
     }
 
     .contact-grid {
@@ -1161,11 +1167,11 @@ footer {
 
     .nav-list a {
         padding: 8px 10px;
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 
     .button-cv a {
-        font-size: large;
+        font-size: 1rem;
     }
 
     .name-container {
@@ -1175,7 +1181,7 @@ footer {
     }
 
     .name-container h1 {
-        font-size: 50px;
+        font-size: 2.25rem;
     }
 
     .about-container,
@@ -1191,7 +1197,7 @@ footer {
     .badge {
         margin-left: 0;
         letter-spacing: 2px;
-        font-size: 12px;
+        font-size: 0.75rem;
         padding: 6px 12px;
     }
 
@@ -1202,7 +1208,7 @@ footer {
     }
 
     .terminal-text {
-        font-size: 16px;
+        font-size: 0.875rem;
     }
 
     .comment-todo {
@@ -1212,6 +1218,7 @@ footer {
 
     .submit-email {
         width: 100%;
+        font-size: 1rem;
     }
 
     .sent-card,
@@ -1225,7 +1232,7 @@ footer {
     }
 
     .footer-text {
-        font-size: 10px;
+        font-size: 0.75rem;
     }
 
     .form-row {
