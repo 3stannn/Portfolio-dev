@@ -270,7 +270,7 @@ nav {
     background-color: #EAECEF;
     color: #0A0A0A;
     font-weight: 800;
-    font-size: 1rem;
+    font-size: 0.875rem;
     border-radius: 10px;
     padding: 0 14px;
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -908,7 +908,7 @@ footer {
 
 .sent-card {
     background-color: #0A0A0A;
-    width: 40%;
+    width: 20%;
     padding: 25px;
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.1);
