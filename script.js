@@ -1,14 +1,9 @@
-const clickSound = new Audio("audio/mouse-click.MP3");
-clickSound.preload = "auto";
-
 const sentModalContainer = document.getElementById("sent-modal")
 const notSentModalContainer = document.getElementById("not-sent-modal")
 const fillModalContainer = document.getElementById("fill-modal")
 const chatbotModalContainer = document.getElementById("chatbotModalContainer")
 
 function themeFunction() {
-   clickSound.currentTime = 0;
-   clickSound.play().catch(() => {});
    
    var body = document.body;
    body.classList.toggle("light-mode");
@@ -96,17 +91,11 @@ function clearInput() {
 function warnUser() {
    event.preventDefault();
 
-   clickSound.currentTime = 0;
-   clickSound.play().catch(() => {});
-
    alert("The email system is currently under development. For now, you can reach me via Discord.")
 }
 
 function sendEmail() {
    event.preventDefault();
-
-   clickSound.currentTime = 0;
-   clickSound.play().catch(() => {});
 
    const templateParams = {
       name: document.getElementById("name").value,
@@ -137,24 +126,15 @@ function sendEmail() {
 }
 
 function closeModal() {
-   clickSound.currentTime = 0;
-   clickSound.play().catch(() => {});
-
    sentModalContainer.classList.remove("show")
    notSentModalContainer.classList.remove("show")
    fillModalContainer.classList.remove("show")
 }
 
 function chatBot() {
-   clickSound.currentTime = 0;
-   clickSound.play().catch(() => {});
-
    chatbotModalContainer.classList.add("show")
 }
 
 function closeChatBot() {
-   clickSound.currentTime = 0;
-   clickSound.play().catch(() => {});
-
    chatbotModalContainer.classList.remove("show")
 }
