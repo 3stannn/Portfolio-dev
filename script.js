@@ -4,6 +4,7 @@ clickSound.preload = "auto";
 const sentModalContainer = document.getElementById("sent-modal")
 const notSentModalContainer = document.getElementById("not-sent-modal")
 const fillModalContainer = document.getElementById("fill-modal")
+const chatbotModalContainer = document.getElementById("chatbotModalContainer")
 
 function themeFunction() {
    clickSound.currentTime = 0;
@@ -62,6 +63,19 @@ function themeFunction() {
    } else {
       githubIcon2.src = "img/github.png";
       githubIcon2.alt = "GitHub Logo";
+   }
+
+   const chatbotIcon = document.getElementById("chatbot-icon")
+   if (!chatbotIcon) {
+      return;
+   }
+
+   if (body.classList.contains("light-mode")) {
+      chatbotIcon.src = "img/comments-light.png";
+      chatbotIcon.alt = "GitHub Logo";
+   } else {
+      chatbotIcon.src = "img/comments.png";
+      chatbotIcon.alt = "GitHub Logo";
    }
 }
 
@@ -135,5 +149,12 @@ function chatBot() {
    clickSound.currentTime = 0;
    clickSound.play().catch(() => {});
 
-   alert("Still Under Development")
+   chatbotModalContainer.classList.add("show")
+}
+
+function closeChatBot() {
+   clickSound.currentTime = 0;
+   clickSound.play().catch(() => {});
+
+   chatbotModalContainer.classList.remove("show")
 }

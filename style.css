@@ -844,22 +844,58 @@ nav {
 .chatbot-container button {
     width: 50px;
     height: 50px;
-    background-color: #0A0A0A;
+    background-color: #EAECEF;
     border-radius: 50%;
     border: none;
     transition: transform 0.3s ease;
-    box-shadow: 0px 0px 80px 0.1px rgb(78, 78, 78);
+    box-shadow: 0px 0px 50px 0.1px rgb(78, 78, 78);
+}
+
+.light-mode .chatbot-container button {
+    background-color: #0A0A0A;
+    box-shadow: 0px 0px 60px 0.1px rgb(78, 78, 78);
 }
 
 .chatbot-container img {
-    width: 20px;
-    height: 20px;
+    width: 35px;
+    height: 35px;
 }
 
 .chatbot-container button:hover {
     cursor: pointer;
-    background-color: #D2A8FF;
     transform: translateY(-5px);
+}
+
+.chatbot-modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 500px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.chatbot-modal-container.show {
+    opacity: 100;
+    pointer-events: auto;
+}
+
+.chatbot-card {
+    background-color: #0A0A0A;
+    width: 400px;
+    height: 500px;
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.light-mode .chatbot-card {
+    background-color: #EAECEF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 footer {
@@ -1145,6 +1181,18 @@ footer {
 
     .proj-grid {
         grid-template-columns: 1fr;
+    }
+
+    .chatbot-container {
+        bottom: 100px;
+    }
+
+    .chatbot-card {
+        width: 350px;
+        height: 500px;
+        position: fixed;
+        bottom: 170px;
+        right: 20px;
     }
 }
 
