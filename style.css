@@ -333,6 +333,7 @@ nav {
 }
 
 .terminal-text {
+    font-family: "JetBrains Mono", monospace;
     font-size: 1.25rem;
     font-weight: 400;
     color: #949494;
@@ -638,7 +639,7 @@ nav {
 
 .finance-tag {
     font-family: "Geist", sans-serif;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 0.6rem;
     border: #62BE68 1px solid;
     background-color: rgba(98, 190, 104, 0.5);
@@ -653,7 +654,7 @@ nav {
 
 .beta-tag {
     font-family: "Geist", sans-serif;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 0.6rem;
     border: #F0934E 1px solid;
     background-color: rgba(240, 147, 78, 0.5);
@@ -1302,6 +1303,10 @@ footer {
 
     .terminal-text {
         font-size: 0.875rem;
+    }
+
+    .proj-img-container {
+        height: 220px;
     }
 
     .comment-todo {
