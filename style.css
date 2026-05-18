@@ -891,11 +891,17 @@ nav {
     padding: 25px;
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 10px 0.1px rgba(78, 78, 78, 0.2);
+}
+
+.chatbot-card h1, p {
+    font-family: "Geist", sans-serif;
 }
 
 .light-mode .chatbot-card {
     background-color: #EAECEF;
     border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 60px 0.1px rgba(78, 78, 78, 0.2);
 }
 
 footer {
@@ -1184,14 +1190,14 @@ footer {
     }
 
     .chatbot-container {
-        bottom: 100px;
+        bottom: 50px;
     }
 
     .chatbot-card {
         width: 350px;
         height: 500px;
         position: fixed;
-        bottom: 170px;
+        bottom: 120px;
         right: 20px;
     }
 }
