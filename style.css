@@ -167,6 +167,7 @@ nav {
 }
 
 .comment {
+    font-family: "JetBrains Mono", monospace;
     color: #949494;
     font-style: italic;
     font-size: 0.875rem;
@@ -227,6 +228,7 @@ nav {
 }
 
 .name-container p.description{
+    font-family: "JetBrains Mono", monospace;
     color: #949494;
     font-size: clamp(1rem, 2.2vw, 1.25rem);
     margin-left: clamp(0px, 5vw, 50px);
