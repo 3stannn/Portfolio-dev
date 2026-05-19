@@ -15,10 +15,8 @@ function themeFunction() {
 
    if (body.classList.contains("light-mode")) {
       icon.src = "img/moon.png";
-      icon.alt = "Moon icon";
    } else {
       icon.src = "img/sun.png";
-      icon.alt = "Sun icon";
    }
 
    const iconScroll = document.getElementById("scroll-icon")
@@ -28,10 +26,8 @@ function themeFunction() {
 
    if (body.classList.contains("light-mode")) {
       iconScroll.src = "img/light-mode-arrow.png";
-      iconScroll.alt = "Moon icon";
    } else {
       iconScroll.src = "img/dark-mode-arrow.png";
-      iconScroll.alt = "Sun icon";
    }
 
    const githubIcon = document.getElementById("github-icon")
@@ -41,10 +37,8 @@ function themeFunction() {
 
    if (body.classList.contains("light-mode")) {
       githubIcon.src = "img/github-light.png";
-      githubIcon.alt = "GitHub Logo";
    } else {
       githubIcon.src = "img/github.png";
-      githubIcon.alt = "GitHub Logo";
    }
 
    const githubIcon2 = document.getElementById("github-icon2")
@@ -54,10 +48,8 @@ function themeFunction() {
 
    if (body.classList.contains("light-mode")) {
       githubIcon2.src = "img/github-light.png";
-      githubIcon2.alt = "GitHub Logo";
    } else {
       githubIcon2.src = "img/github.png";
-      githubIcon2.alt = "GitHub Logo";
    }
 
    const chatbotIcon = document.getElementById("chatbot-icon")
@@ -67,10 +59,19 @@ function themeFunction() {
 
    if (body.classList.contains("light-mode")) {
       chatbotIcon.src = "img/comments-light.png";
-      chatbotIcon.alt = "GitHub Logo";
    } else {
       chatbotIcon.src = "img/comments.png";
-      chatbotIcon.alt = "GitHub Logo";
+   }
+
+   const expressIcon = document.getElementById("ex-icon")
+   if (!chatbotIcon) {
+      return;
+   }
+
+   if (body.classList.contains("light-mode")) {
+      expressIcon.src = "img/express-light.png";
+   } else {
+      expressIcon.src = "img/express.png";
    }
 }
 
