@@ -440,9 +440,9 @@ nav {
 }
 
 .language.python {
-    background-color: rgba(60, 115, 160, 0.1);
-    border: 1px solid rgba(60, 115, 160, 0.5);
-    color: #3C73A0;
+    background-color: rgba(255, 206, 61, 0.1);
+    border: 1px solid rgba(255, 206, 61, 0.5);
+    color: #FFCE3D;
 }
 
 .language.mysql {
