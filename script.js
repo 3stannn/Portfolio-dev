@@ -8,10 +8,6 @@ function themeFunction() {
    var body = document.body;
    body.classList.toggle("light-mode");
 
-   // Save theme preference to localStorage
-   const isLightMode = body.classList.contains("light-mode");
-   localStorage.setItem("theme", isLightMode ? "light" : "dark");
-
    const icon = document.getElementById("theme-icon");
    if (!icon) {
       return;
@@ -78,38 +74,6 @@ function themeFunction() {
       expressIcon.src = "img/express.png";
    }
 }
-
-function loadTheme() {
-   const savedTheme = localStorage.getItem("theme");
-   
-   if (savedTheme === "light") {
-      // Apply light mode without triggering the full themeFunction
-      var body = document.body;
-      body.classList.add("light-mode");
-      
-      // Update icons to light mode
-      const icon = document.getElementById("theme-icon");
-      if (icon) icon.src = "img/moon.png";
-      
-      const iconScroll = document.getElementById("scroll-icon");
-      if (iconScroll) iconScroll.src = "img/light-mode-arrow.png";
-      
-      const githubIcon = document.getElementById("github-icon");
-      if (githubIcon) githubIcon.src = "img/github-light.png";
-      
-      const githubIcon2 = document.getElementById("github-icon2");
-      if (githubIcon2) githubIcon2.src = "img/github-light.png";
-      
-      const chatbotIcon = document.getElementById("chatbot-icon");
-      if (chatbotIcon) chatbotIcon.src = "img/comments-light.png";
-      
-      const expressIcon = document.getElementById("ex-icon");
-      if (expressIcon) expressIcon.src = "img/express-light.png";
-   }
-}
-
-// Load theme on page load
-document.addEventListener("DOMContentLoaded", loadTheme);
 
 function clearInput() {
    const templateParams = {
