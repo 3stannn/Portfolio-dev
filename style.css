@@ -199,7 +199,10 @@ nav {
 }
 
 .name-container {
-    padding: clamp(24px, 7vw, 100px);
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 100px;
     width: 75%;
     max-width: 1200px;
     margin: 0 auto;
@@ -355,7 +358,9 @@ nav {
 }
 
 .about-container {
-    padding: clamp(24px, 7vw, 100px);
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
     width: 75%;
     max-width: 1200px;
     margin: 0 auto;
@@ -616,7 +621,9 @@ nav {
 }
 
 .work-container {
-    padding: clamp(24px, 7vw, 100px);
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
     width: 75%;
     max-width: 1200px;
     margin: 0 auto;
@@ -630,7 +637,9 @@ nav {
 }
 
 .cert-container {
-    padding: clamp(24px, 7vw, 100px);
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
     width: 75%;
     max-width: 1200px;
     margin: 0 auto;
@@ -707,7 +716,9 @@ nav {
 }
 
 .proj-container {
-    padding: clamp(24px, 7vw, 100px);
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
     width: 75%;
     max-width: 1200px;
     margin: 0 auto;
@@ -837,7 +848,9 @@ nav {
 }
 
 .contact-container {
-    padding: clamp(24px, 7vw, 100px);
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
     width: 75%;
     max-width: 1200px;
     margin: 0 auto;
@@ -1315,6 +1328,25 @@ footer {
 }
 
 @media (max-width: 1200px) {
+    .name-container,
+    .about-container,
+    .proj-container,
+    .work-container,
+    .cert-container,
+    .contact-container {
+        width: 100%;
+    }
+
+    .card,
+    .language,
+    .proj-card,
+    .cert-card,
+    .contact-card {
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 15%;
+    }
+
     .social-card {
         width: 90%;
     }
