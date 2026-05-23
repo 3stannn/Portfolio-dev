@@ -39,6 +39,33 @@ a {
     box-sizing: border-box;
 }
 
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.card,
+.languages-container,
+.proj-grid,
+.cert-grid,
+.contact-card {
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 30%;
+    }
+
+.social-card {
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 20%;
+}
+
 .theme-button {
     cursor: pointer;
     border: 1px solid rgba(192, 132, 252, 0.4);
@@ -229,7 +256,7 @@ nav {
 .name-container p.description{
     font-family: "JetBrains Mono", monospace;
     color: #949494;
-    border-right: 5px solid;
+    border-right: 5px solid rgba(192, 132, 252, 1);
     width: 90%;
     white-space: nowrap;
     overflow: hidden;
@@ -237,6 +264,10 @@ nav {
             cursor .4s step-end infinite alternate;
     font-size: clamp(1rem, 2.2vw, 1.25rem);
     margin-left: clamp(0px, 5vw, 50px);
+}
+
+.light-mode .name-container p.description {
+    border-right: 5px solid rgb(125, 3, 255);
 }
 
 @keyframes cursor {
