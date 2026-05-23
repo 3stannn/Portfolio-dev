@@ -1371,6 +1371,18 @@ footer {
         animation-range: entry 0% cover 15%;
     }
 
+    .sent-card {
+        width: 30vw;
+    }
+
+    .fill-card {
+        width: 30vw;
+    }
+
+    .not-sent-card {
+        width: 40vw;
+    }
+
     .social-card {
         width: 90%;
     }
