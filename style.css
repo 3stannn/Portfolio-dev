@@ -991,7 +991,7 @@ nav {
 
 .submit-email {
     width: 40%;
-    font-family: "Geist", sans-serif;
+    font-family: "JetBrains Mono", monospace;
     font-weight: 700;
     font-size: 0.875rem;
     background-color: white;
