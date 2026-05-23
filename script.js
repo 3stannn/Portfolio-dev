@@ -14,9 +14,9 @@ function themeFunction() {
    }
 
    if (body.classList.contains("light-mode")) {
-      icon.src = "img/moon.png";
+      icon.src = "img/moon.svg";
    } else {
-      icon.src = "img/sun.png";
+      icon.src = "img/sun.svg";
    }
 
    const iconScroll = document.getElementById("scroll-icon")
