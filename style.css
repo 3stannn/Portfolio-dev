@@ -51,9 +51,9 @@ a {
 }
 
 .card,
-.languages-container,
-.proj-grid,
-.cert-grid,
+.language,
+.proj-card,
+.cert-card,
 .contact-card {
         animation: appear linear;
         animation-timeline: view();
