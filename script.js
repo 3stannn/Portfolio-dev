@@ -58,9 +58,9 @@ function themeFunction() {
    }
 
    if (body.classList.contains("light-mode")) {
-      chatbotIcon.src = "img/comments-light.png";
+      chatbotIcon.src = "img/chat.svg";
    } else {
-      chatbotIcon.src = "img/comments.png";
+      chatbotIcon.src = "img/chat-light.svg";
    }
 
    const expressIcon = document.getElementById("ex-icon")
@@ -72,6 +72,28 @@ function themeFunction() {
       expressIcon.src = "img/express-light.png";
    } else {
       expressIcon.src = "img/express.png";
+   }
+
+   const messageIcon = document.getElementById("message-icon")
+   if (!messageIcon) {
+      return;
+   }
+
+   if (body.classList.contains("light-mode")) {
+      messageIcon.src = "img/message-light.svg";
+   } else {
+      messageIcon.src = "img/message.svg";
+   }
+
+   const cvIcon = document.getElementById("cv-icon")
+   if (!cvIcon) {
+      return;
+   }
+
+   if (body.classList.contains("light-mode")) {
+      cvIcon.src = "img/file-download-light.svg";
+   } else {
+      cvIcon.src = "img/file-download.svg";
    }
 }
 
