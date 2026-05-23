@@ -183,14 +183,14 @@ nav {
 .badge {
     
     display: inline-block;
-    padding: 5px 20px;
+    padding: 5px 15px;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: clamp(0px, 5vw, 50px);
 
     letter-spacing: 4px;
 
-    font-size: 1rem;
+    font-size: 0.8rem;
 
     color: #D2A8FF;
 
@@ -211,8 +211,8 @@ nav {
 }
 
 .light-mode .badge {
-    color: #a551ff;
-    background: rgba(192, 132, 252, 0.2);
+    color: #7b00ff;
+    background: rgba(192, 132, 252, 0.4);
     border: 1px solid rgba(192, 132, 252, 0.651);
 }
 
@@ -230,8 +230,26 @@ nav {
 .name-container p.description{
     font-family: "JetBrains Mono", monospace;
     color: #949494;
+    border-right: 5px solid;
+    width: 90%;
+    white-space: nowrap;
+    overflow: hidden;
+            animation: typing 2s,
+            cursor .4s step-end infinite alternate;
     font-size: clamp(1rem, 2.2vw, 1.25rem);
     margin-left: clamp(0px, 5vw, 50px);
+}
+
+@keyframes cursor {
+    50% { border-color: transparent;}
+}
+
+@keyframes typing {
+    from {width: 0;}
+}
+
+.paragraph-container {
+    display: inline-block;
 }
 
 .link-container {
@@ -443,6 +461,12 @@ nav {
     background-color: rgba(255, 206, 61, 0.2);
     border: 1px solid rgba(255, 206, 61, 0.5);
     color: #F0B105;
+}
+
+.language.php {
+    background-color: rgba(123, 127, 181, 0.1);
+    border: 1px solid rgba(123, 127, 181, 0.5);
+    color: #7B7FB5;
 }
 
 .language.mysql {
@@ -1422,6 +1446,7 @@ footer {
     .name-container p.description,
     .link-container {
         margin-left: 0;
+        width: 100%;
     }
 
     .terminal-text {
