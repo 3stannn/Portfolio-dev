@@ -2,99 +2,73 @@ const sentModalContainer = document.getElementById("sent-modal")
 const notSentModalContainer = document.getElementById("not-sent-modal")
 const fillModalContainer = document.getElementById("fill-modal")
 const chatbotModalContainer = document.getElementById("chatbotModalContainer")
+const themeStorageKey = "portfolio-theme"
+
+function applyThemeAssets() {
+   const body = document.body;
+   const isLightMode = body.classList.contains("light-mode");
+
+   const icon = document.getElementById("theme-icon");
+   if (icon) {
+      icon.src = isLightMode ? "img/moon.svg" : "img/sun.svg";
+   }
+
+   const iconScroll = document.getElementById("scroll-icon")
+   if (iconScroll) {
+      iconScroll.src = isLightMode ? "img/light-mode-arrow.png" : "img/dark-mode-arrow.png";
+   }
+
+   const githubIcon = document.getElementById("github-icon")
+   if (githubIcon) {
+      githubIcon.src = isLightMode ? "img/github-light.png" : "img/github.png";
+   }
+
+   const githubIcon2 = document.getElementById("github-icon2")
+   if (githubIcon2) {
+      githubIcon2.src = isLightMode ? "img/github-light.png" : "img/github.png";
+   }
+
+   const chatbotIcon = document.getElementById("chatbot-icon")
+   if (chatbotIcon) {
+      chatbotIcon.src = isLightMode ? "img/chat.svg" : "img/chat-light.svg";
+   }
+
+   const expressIcon = document.getElementById("ex-icon")
+   if (expressIcon) {
+      expressIcon.src = isLightMode ? "img/express-light.png" : "img/express.png";
+   }
+
+   const messageIcon = document.getElementById("message-icon")
+   if (messageIcon) {
+      messageIcon.src = isLightMode ? "img/message-light.svg" : "img/message.svg";
+   }
+
+   const cvIcon = document.getElementById("cv-icon")
+   if (cvIcon) {
+      cvIcon.src = isLightMode ? "img/file-download-light.svg" : "img/file-download.svg";
+   }
+}
+
+function initTheme() {
+   if (localStorage.getItem(themeStorageKey) === "light") {
+      document.body.classList.add("light-mode");
+   }
+
+   applyThemeAssets();
+}
 
 function themeFunction() {
    
    var body = document.body;
    body.classList.toggle("light-mode");
 
-   const icon = document.getElementById("theme-icon");
-   if (!icon) {
-      return;
-   }
-
    if (body.classList.contains("light-mode")) {
-      icon.src = "img/moon.svg";
+      localStorage.setItem(themeStorageKey, "light");
    } else {
-      icon.src = "img/sun.svg";
+      localStorage.removeItem(themeStorageKey);
    }
 
-   const iconScroll = document.getElementById("scroll-icon")
-   if (!iconScroll) {
-      return;
-   }
-
-   if (body.classList.contains("light-mode")) {
-      iconScroll.src = "img/light-mode-arrow.png";
-   } else {
-      iconScroll.src = "img/dark-mode-arrow.png";
-   }
-
-   const githubIcon = document.getElementById("github-icon")
-   if (!githubIcon) {
-      return;
-   }
-
-   if (body.classList.contains("light-mode")) {
-      githubIcon.src = "img/github-light.png";
-   } else {
-      githubIcon.src = "img/github.png";
-   }
-
-   const githubIcon2 = document.getElementById("github-icon2")
-   if (!githubIcon2) {
-      return;
-   }
-
-   if (body.classList.contains("light-mode")) {
-      githubIcon2.src = "img/github-light.png";
-   } else {
-      githubIcon2.src = "img/github.png";
-   }
-
-   const chatbotIcon = document.getElementById("chatbot-icon")
-   if (!chatbotIcon) {
-      return;
-   }
-
-   if (body.classList.contains("light-mode")) {
-      chatbotIcon.src = "img/chat.svg";
-   } else {
-      chatbotIcon.src = "img/chat-light.svg";
-   }
-
-   const expressIcon = document.getElementById("ex-icon")
-   if (!chatbotIcon) {
-      return;
-   }
-
-   if (body.classList.contains("light-mode")) {
-      expressIcon.src = "img/express-light.png";
-   } else {
-      expressIcon.src = "img/express.png";
-   }
-
-   const messageIcon = document.getElementById("message-icon")
-   if (!messageIcon) {
-      return;
-   }
-
-   if (body.classList.contains("light-mode")) {
-      messageIcon.src = "img/message-light.svg";
-   } else {
-      messageIcon.src = "img/message.svg";
-   }
-
-   const cvIcon = document.getElementById("cv-icon")
-   if (!cvIcon) {
-      return;
-   }
-
-   if (body.classList.contains("light-mode")) {
-      cvIcon.src = "img/file-download-light.svg";
-   } else {
-      cvIcon.src = "img/file-download.svg";
-   }
+   applyThemeAssets();
 }
 
 function clearInput() {
@@ -161,3 +135,5 @@ function chatBot() {
 function closeChatBot() {
    chatbotModalContainer.classList.remove("show")
 }
+
+initTheme();
