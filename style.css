@@ -533,18 +533,6 @@ nav {
     color: #51d345;
 }
 
-.language.mongodb {
-    background-color: rgba(70, 142, 64, 0.2);
-    border: 1px solid rgba(70, 142, 64, 0.5);
-    color: #45d368;
-}
-
-.language.exjs {
-    background-color: rgba(10, 10, 10, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    color: #EAECEF;
-}
-
 .light-mode .language.exjs {
     border: 1px solid rgba(0, 0, 0, 0.5);
     background-color: rgba(10, 10, 10, 0.1);
