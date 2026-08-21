@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,397 +11,290 @@
     <meta property="og:description" content="Developer Portfolio.">
     <meta property="og:url" content="https://portfolio-dev-jet-delta.vercel.app/">
     <meta property="og:image" content="https://portfolio-dev-jet-delta.vercel.app/img/pfp.jpg">
-    <meta property="og:image:alt" content="Thristan Bumagat profile photo">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Thristan Bumagat - Developer">
-    <meta name="twitter:description" content="Developer portfolio.">
-    <meta name="twitter:image" content="https://portfolio-dev-jet-delta.vercel.app/img/pfp.jpg">
+
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
     <link rel="icon" href="img/pfp.jpg" type="image/jpeg">
-    <link rel="shortcut icon" href="img/pfp.jpg" type="image/jpeg">
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript">
-    (function(){
-        emailjs.init({
-            publicKey: "ZGCaq8KxwU3V8kL-q",
-        });
-    })();
+        (function () {
+            emailjs.init({
+                publicKey: "ZGCaq8KxwU3V8kL-q",
+            });
+        })();
     </script>
 </head>
+
 <body>
-    <div id="home"></div>
-    <div class="header-container">
-        <div class="nav-container">
-            <header class="inner">
-                <p><span class="tag-mark">&lt</span><span style="font-weight: 600;">Kodekz</span><span class="tag-mark">/&gt</span></p>
-                <nav>
-                    <ul class="nav-list">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
-                <button onclick="themeFunction()" class="theme-button"><img id="theme-icon" src="img/sun.svg" alt=""></button>
-            </header>
-        </div>
-    </div>
+    <!-- Halftone background -->
+    <div class="halftone-bg mask-gradient"></div>
 
-    <div class="name-container">
-        <span class="tag-mark">&lt!</span><span class="inner">DOCTYPE <span class="inner-orange">html</span></span><span class="tag-mark">&gt</span>
-        <br><br>
-        <span class="comment">&lt!-- portfolio --&gt</span>
-        
-        <p><span class="tag-mark">&lt</span><span class="inner">h1</span><span class="tag-mark">&gt</span></p>
-        
-        <div class="badge">
-            FRONT-END DEVELOPER
-        </div>
+    <div class="layout-wrapper">
+        <!-- Desktop Sidebar Navigation -->
+        <nav class="sidebar">
+            <a href="#" class="brand">
+                kodekz
+            </a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#certifications">Certifications</a>
+                <a href="#contact">Contact</a>
+            </div>
 
-        <h1>Thristan Dave <br> Bumagat</h1>
-        
-        <div class="paragraph-container">
-            <p class="description">2nd Year Computer Science Student</p>
-        </div>
+            <button onclick="themeFunction()" class="theme-toggle" id="theme-button">
+                <img id="theme-icon" src="img/sun.svg" alt="Toggle Theme" class="invert-light">
+                <span>Toggle Theme</span>
+            </button>
+        </nav>
 
-        <div class="link-container">
-            <a class="button-cv" target="_blank" href="pdf/resume.pdf"><img id="cv-icon" src="img/file-download.svg" alt="">Download</a>
-            <a target="_blank" href="https://github.com/3stannn"><img id="github-icon" src="img/github.png" alt=""></a>
-            <a target="_blank" href="https://www.linkedin.com/in/thristan-dave-bumagat-86356129a/"><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/linkedin/default.svg" alt=""></a>
-            <a class="discord-img" target="_blank" href="https://discordapp.com/users/662096336161603602"><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/discord/default.svg" alt=""></a>
-        </div>
-        
-        <p><span class="tag-mark">&lt/</span><span class="inner">h1</span><span class="tag-mark">&gt</span></p>
+        <!-- Mobile Header -->
+        <header class="mobile-header">
+            <div class="mobile-header-top">
+                <a href="#" class="brand">kodekz</a>
+                <button onclick="themeFunction()" class="theme-toggle" style="margin-top:0;">
+                    <img id="theme-icon-mobile" src="img/sun.svg" alt="Toggle Theme" class="invert-light">
+                </button>
+            </div>
+            <div class="mobile-nav-links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#certifications">Certifications</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </header>
 
-        <span class="comment-todo">//TODO: Turn ideas into functional, real-world systems.</span>
-    </div>
+        <main class="main-content">
+            <!-- Hero -->
+            <section id="home" class="hero">
+                <div class="badge mono">FRONT-END DEVELOPER</div>
+                <h1>Thristan Dave <br> Bumagat</h1>
+                <p class="role mono">> 2nd Year Computer Science Student</p>
 
-    <div class="about-container" id="about">
-        <span class="tag-mark">&lt</span><span class="inner">section</span><span class="inner-orange"> id</span><span class="tag-mark">=</span><span class="string">"about"</span><span class="tag-mark">&gt</span>
-        
-        <p><span class="tag-mark">&lt</span><span class="inner">h2</span><span class="tag-mark">&gt</span></p>
-        <h1>About Me</h1>
-        <p><span class="tag-mark">&lt/</span><span class="inner">h2</span><span class="tag-mark">&gt</span></p>
-        <br>
-         <div class="card">
-            <div class="card-controls">
-                <button style="background-color: #c7222a;"></button>
-                <button style="background-color: #c28f02;"></button>
-                <button style="background-color: #018D3A;"></button>
-                <span class="terminal-text">terminal</span>
-            </div>
-            <p><span class="terminal-text">$ whoami</span><br><span class="terminal-text">&gt Thristan</span></p>
-            <p><span class="terminal-text">$ cat about.txt</span><br><span class=""></span><span class="terminal-text">&gt 2nd-year Computer Science student</span><br><span class="terminal-text">&gt passionate about building projects from concept to deployment</span><br><span class="terminal-text">&gt constantly learning and improving through hands-on development</span></p>
-            <p><span class="terminal-text">$ cat role.txt</span><br><span class="terminal-text">&gt aspiring software engineer</span></p>
-         </div>
-         <p><span class="tag-mark">&lt</span><span class="inner">h2</span><span class="tag-mark">&gt</span></p>
-         <h1>Tech Stack</h1>
-         <p><span class="tag-mark">&lt/</span><span class="inner">h2</span><span class="tag-mark">&gt</span></p>
-            <p class="comment">// continuously improving my skills</p>
-            <div class="languages-container">
-                <div class="language html">
-                    <p><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/html5/default.svg" alt="">HTML5</p>
+                <div class="socials">
+                    <a class="btn" target="_blank" href="pdf/resume.pdf">
+                        Download CV
+                    </a>
+                    <a class="btn" target="_blank" href="https://github.com/3stannn">
+                        <img id="github-icon"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+                            alt="" class="invert-dark"> GitHub
+                    </a>
+                    <a class="btn" target="_blank" href="https://www.linkedin.com/in/thristan-dave-bumagat-86356129a/">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg"
+                            alt=""> LinkedIn
+                    </a>
                 </div>
-                <div class="language css">
-                    <p><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/css/default.svg" alt="">CSS</p>
-                </div>
-                <div class="language js">
-                    <p><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/javascript/default.svg" alt="">JavaScript</p>
-                </div>
-            </div>
-            <div class="languages-container">
-                <div class="language java">
-                    <p><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/java/default.svg" alt="">Java</p>
-                </div>
-                <div class="language python">
-                    <p><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/python/default.svg" alt="">Python</p>
-                </div>
-                <div class="language php">
-                    <p><img src="img/php-logo.png" alt="">PHP</p>
-                </div>
-                <div class="language mysql">
-                    <p><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/mysql/wordmark-light.svg" alt="">MySQL</p>
-                </div>
-                <div class="language nodejs">
-                    <p><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/nodedotjs/default.svg" alt="">Node.js</p>
-                </div>
-            </div>
-            <div class="languages-container">
-                <div class="language ps">
-                    <p><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/photoshop/default.svg" alt="">Photoshop</p>
-                </div>
-                <div class="language ai">
-                    <p><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/illustrator/default.svg" alt="">Illustrator</p>
-                </div>
-            </div>
-            <div class="languages-container">
-                <div class="language vsc">
-                    <p><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/visual-studio-code/default.svg" alt="">VS Code</p>
-                </div>
-                <div class="language vs">
-                    <p><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/visual-studio/default.svg" alt="">Visual Studio</p>
-                </div>
-                <div class="language xampp">
-                    <p><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/xampp/default.svg" alt="">XAMPP</p>
-                </div>
-                <div class="language postman">
-                    <p><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/postman/default.svg" alt="">Postman</p>
-                </div>
-                <div class="language npm">
-                    <p><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/npm/default.svg" alt="">NPM</p>
-                </div>
-                <div class="language git">
-                    <p><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/git/default.svg" alt="">Git</p>
-                </div>
-                <div class="language github">
-                    <p><img id="github-icon2" src="img/github.png"  alt="">GitHub</p>
-                </div>
-            </div>
-        
-        <span class="tag-mark">&lt/</span><span class="inner">section</span><span class="tag-mark">&gt</span>
-    </div>
+            </section>
 
-    <div class="proj-container" id="projects">
-        <span class="tag-mark">&lt</span><span class="inner">section</span><span class="inner-orange"> id</span><span class="tag-mark">=</span><span class="string">"projects"</span><span class="tag-mark">&gt</span>
-        
-        <p><span class="tag-mark">&lt</span><span class="inner">h2</span><span class="tag-mark">&gt</span></p>
-        <h1>Projects</h1>
-        <p><span class="tag-mark">&lt/</span><span class="inner">h2</span><span class="tag-mark">&gt</span></p>
-        <p class="comment">// recent works</p>
-        <br>
-        <div class="proj-grid">
-            <div class="proj-card">
-                <div class="proj-img-container">
-                    <a target="_blank" href=""><img src="proj/portfolio.png" alt="" srcset=""></a>
-                </div>
-                <div class="proj-txt-container">
-                    <a class="proj-text" target="_blank" href="">Personal Portfolio</a>
-                    <p class="proj-text">Computer Science student and aspiring developer focused on building clean, functional, and user-friendly digital solutions.
-                    </p>
-                    <div class="tags-container">
-                        <div class="tags">
-                            <div class="language-tag">
-                                HTML5
-                            </div>
-                            <div class="language-tag">
-                                CSS
-                            </div>
-                            <div class="language-tag">
-                                JavaScript
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="proj-card">
-                <div class="proj-img-container">
-                    <a target="_blank" href="https://github.com/3stannn/Tyto/releases"><img src="proj/tyto.png" alt="" srcset=""></a>
-                </div>
-                <div class="proj-txt-container">
-                    <a class="proj-text" target="_blank" href="https://github.com/3stannn/Tyto/releases">Tyto - Payment Ledger System</a>
-                    <p class="proj-text">A financial management solution designed to efficiently record, track,
-                        and manage all payment-related transactions within an organization.
-                    </p>
-                    <div class="tags">
-                        <div class="language-tag">
-                            VB.Net
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <br>
-        <div class="proj-grid">
-            <div class="proj-card">
-                <div class="proj-img-container">
-                    <a target="_blank" href="https://expense-tracker-fawn-psi-24.vercel.app/"><img src="proj/expense-tracker.png" alt="" srcset=""></a>
-                </div>
-                <div class="proj-txt-container">
-                    <a class="proj-text" target="_blank" href="https://expense-tracker-fawn-psi-24.vercel.app/">Expense Tracker</a>
-                    <p class="proj-text">A lightweight, fast, and privacy-focused expense tracker built specifically for students and anyone on a budget who wants an easy way to monitor their daily spending.
-                    </p>
-                    <div class="tags-container">
-                        <div class="tags">
-                            <div class="language-tag">
-                                HTML5
-                            </div>
-                            <div class="language-tag">
-                                CSS
-                            </div>
-                            <div class="language-tag">
-                                JavaScript
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <br>        
-        <span class="tag-mark">&lt/</span><span class="inner">section</span><span class="tag-mark">&gt</span>
-    </div>
-
-    <div class="work-container">
-        <span class="tag-mark">&lt</span><span class="inner">section</span><span class="inner-orange"> id</span><span class="tag-mark">=</span><span class="string">"work"</span><span class="tag-mark">&gt</span>
-        
-        <p><span class="tag-mark">&lt</span><span class="inner">h2</span><span class="tag-mark">&gt</span></p>
-        <h1>Work</h1>
-        <p><span class="tag-mark">&lt/</span><span class="inner">h2</span><span class="tag-mark">&gt</span></p>
-        <p class="comment">// my journey</p>
-        <br>
-        <span class="comment">&lt!-- Coming Soon... --&gt</span>
-        <br><br>        
-        <span class="tag-mark">&lt/</span><span class="inner">section</span><span class="tag-mark">&gt</span>
-    </div>
-
-    <div class="cert-container">
-        <span class="tag-mark">&lt</span><span class="inner">section</span><span class="inner-orange"> id</span><span class="tag-mark">=</span><span class="string">"certifications"</span><span class="tag-mark">&gt</span>
-        
-        <p><span class="tag-mark">&lt</span><span class="inner">h2</span><span class="tag-mark">&gt</span></p>
-        <h1>Certifications</h1>
-        <p><span class="tag-mark">&lt/</span><span class="inner">h2</span><span class="tag-mark">&gt</span></p>
-        <p class="comment">// credentials & qualifications</p>
-        <br>
-        <div class="cert-grid">
-            <div class="cert-card">
-                <a class="cert-text" target="_blank" href="https://www.codecred.dev/verify/482e33bd-2832-4efa-af1a-acc7ad4105f5">HTML Fundamentals - CodeCred</a>
-                <p class="cert-text">A comprehensive assessment of foundational HTML concepts, including structure, elements,
-                    and semantic markup.
+            <!-- About -->
+            <section id="about">
+                <h2>About Me</h2>
+                <p>
+                    I am a 2nd-year Computer Science student passionate about building projects from concept to
+                    deployment. I am constantly learning and improving through hands-on development. My goal is to turn
+                    ideas into functional, real-world systems as an aspiring software engineer.
                 </p>
-            </div>
-            <div class="cert-card">
-                <a class="cert-text" target="_blank" href="https://www.credly.com/badges/a4bb5c18-4a8a-4cc5-9719-78c7b6e53e15/public_url">CCNA : Introduction to Networks - Cisco Networking Academy</a>
-                <p class="cert-text">The first in a three-course series to build your networking skills and get ready for CCNA certification and associate-level jobs.
-                </p>
-            </div>
-        </div>
-        <br>        
-        <span class="tag-mark">&lt/</span><span class="inner">section</span><span class="tag-mark">&gt</span>
-    </div>
 
-    <div class="contact-container" id="contact">
-        <span class="tag-mark">&lt</span><span class="inner">section</span><span class="inner-orange"> id</span><span class="tag-mark">=</span><span class="string">"contact"</span><span class="tag-mark">&gt</span>
-        
-        <p><span class="tag-mark">&lt</span><span class="inner">h2</span><span class="tag-mark">&gt</span></p>
-        <h1>Contact me</h1>
-        <p><span class="tag-mark">&lt/</span><span class="inner">h2</span><span class="tag-mark">&gt</span></p>
-        <br>
-        <span class="comment">// Get in touch before I write another line of code!</span>
-        <div class="contact-grid">
-            <div class="social-container">
-                <h2>Social Links</h2>
-                <div class="social-card">
-                    <p>GitHub</p>
-                    <a target="_blank" href="https://github.com/3stannn">github.com/3stannn</a>
+                <h3 style="margin-top: 40px; margin-bottom: 15px;">Tech Stack</h3>
+                <div class="tech-grid">
+                    <div class="tech-item"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                            alt=""> HTML5</div>
+                    <div class="tech-item"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+                            alt=""> CSS</div>
+                    <div class="tech-item"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                            alt=""> JavaScript</div>
+                    <div class="tech-item"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
+                            alt=""> Java</div>
+                    <div class="tech-item"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+                            alt=""> Python</div>
+                    <div class="tech-item"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
+                            alt=""> MySQL</div>
+                    <div class="tech-item"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
+                            alt=""> Node.js</div>
+                    <div class="tech-item"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="">
+                        Git</div>
                 </div>
-                <div class="social-card">
-                    <p>Linkedin</p>
-                    <a target="_blank" href="https://www.linkedin.com/in/kodekz01/">linkedin.com/in/kodekz01</a>
+            </section>
+
+            <!-- Projects -->
+            <section id="projects">
+                <h2>Projects</h2>
+                <p>Recent works and developments</p>
+
+                <div class="grid-2">
+                    <div class="card">
+                        <a target="_blank" href="#">
+                            <img class="preview" src="proj/portfolio.png" alt="Personal Portfolio">
+                        </a>
+                        <div class="card-body">
+                            <a target="_blank" href="#">
+                                <h3>Personal Portfolio</h3>
+                            </a>
+                            <p>Computer Science student and aspiring developer focused on building clean, functional,
+                                and user-friendly digital solutions.</p>
+                            <div class="tags mono">
+                                <span>HTML5</span><span>CSS</span><span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <a target="_blank" href="https://github.com/3stannn/Tyto/releases">
+                            <img class="preview" src="proj/tyto.png" alt="Tyto">
+                        </a>
+                        <div class="card-body">
+                            <a target="_blank" href="https://github.com/3stannn/Tyto/releases">
+                                <h3>Tyto - Payment Ledger</h3>
+                            </a>
+                            <p>A financial management solution designed to efficiently record, track, and manage all
+                                payment-related transactions.</p>
+                            <div class="tags mono">
+                                <span>VB.Net</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <a target="_blank" href="https://expense-tracker-fawn-psi-24.vercel.app/">
+                            <img class="preview" src="proj/expense-tracker.png" alt="Expense Tracker">
+                        </a>
+                        <div class="card-body">
+                            <a target="_blank" href="https://expense-tracker-fawn-psi-24.vercel.app/">
+                                <h3>Expense Tracker</h3>
+                            </a>
+                            <p>A lightweight, fast, and privacy-focused expense tracker built specifically for students
+                                and anyone on a budget.</p>
+                            <div class="tags mono">
+                                <span>HTML5</span><span>CSS</span><span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="social-card">
-                    <p>Discord</p>
-                    <a target="_blank" href="https://discordapp.com/users/662096336161603602">dv.eee</a>
+            </section>
+
+            <!-- Certifications -->
+            <section id="certifications">
+                <h2>Certifications</h2>
+                <p>Credentials & Qualifications</p>
+                <div class="grid-2">
+                    <div class="card" style="padding: 20px;">
+                        <a target="_blank" href="https://www.codecred.dev/verify/482e33bd-2832-4efa-af1a-acc7ad4105f5">
+                            <h3>HTML Fundamentals</h3>
+                        </a>
+                        <p class="mono">CodeCred</p>
+                        <p style="margin: 0; font-size: 0.9rem;">A comprehensive assessment of foundational HTML
+                            concepts, including structure, elements, and semantic markup.</p>
+                    </div>
+                    <div class="card" style="padding: 20px;">
+                        <a target="_blank"
+                            href="https://www.credly.com/badges/a4bb5c18-4a8a-4cc5-9719-78c7b6e53e15/public_url">
+                            <h3>CCNA: Intro to Networks</h3>
+                        </a>
+                        <p class="mono">Cisco Networking Academy</p>
+                        <p style="margin: 0; font-size: 0.9rem;">Building networking skills and preparing for CCNA
+                            certification and associate-level jobs.</p>
+                    </div>
                 </div>
+            </section>
+
+            <!-- Contact -->
+            <section id="contact">
                 <h2>Get in Touch</h2>
-                <div class="social-card">
-                    <p>Email</p>
-                    <a href="#contact-card">thristandave12@gmail.com</a>
-                </div>
-            </div>
-            <div class="contact-card" id="contact-card">
-            <div class="card-controls">
-                <button onclick="clearInput()" style="background-color: #c7222a; cursor: pointer;"></button>
-                <button style="background-color: #c28f02;"></button>
-                <button style="background-color: #018D3A;"></button>
-            </div>
-                <div>
-                <br>
-                    <form class="input-group" id="contact-form">
-                        <div class="form-row">
-                            <div class="form-field">
-                                <label for="name">Name<span style="color: #ff000d;">*</span></label>
-                                <input class="input" type="text" name="name" id="name" placeholder="Your Name" required>
+                <p>Reach out before I write another line of code.</p>
+
+                <div class="grid-2">
+                    <div>
+                        <div style="margin-bottom: 20px;">
+                            <strong>Email</strong><br>
+                            <a href="mailto:thristandave12@gmail.com" class="mono"
+                                style="color: rgb(var(--g500));">thristandave12@gmail.com</a>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <strong>GitHub</strong><br>
+                            <a target="_blank" href="https://github.com/3stannn" class="mono"
+                                style="color: rgb(var(--g500));">github.com/3stannn</a>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <strong>LinkedIn</strong><br>
+                            <a target="_blank" href="https://www.linkedin.com/in/kodekz01/" class="mono"
+                                style="color: rgb(var(--g500));">linkedin.com/in/kodekz01</a>
+                        </div>
+                    </div>
+
+                    <div class="card" style="padding: 24px; background: transparent;">
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name *</label>
+                                <input type="text" name="name" id="name" placeholder="Your Name" required>
                             </div>
-                            <div class="form-field">
-                                <label for="email">Email<span style="color: #ff000d;">*</span></label>
-                                <input class="input" type="text" name="email" id="email" placeholder="Your @email.com" required>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" name="email" id="email" placeholder="Your @email.com" required>
                             </div>
-                        </div>
-                        <div class="form-field">
-                                <label for="name">Subject<span style="color: #ff000d;">*</span></label>
-                                <input class="input" type="text" name="title" id="title" placeholder="What is this about" required>
-                        </div>
-                        <div class="form-field">
-                            <label for="message">Message<span style="color: #ff000d;">*</span></label>
-                            <textarea class="input" rows="5" name="message" id="message" placeholder="Message" required></textarea>
-                        </div>
-                        <button onclick="sendEmail()" type="submit" class="submit-email"><img id="message-icon" src="img/message.svg" alt=""> send-email()</button>
-                    </form>
+                            <div class="form-group">
+                                <label for="title">Subject *</label>
+                                <input type="text" name="title" id="title" placeholder="What is this about?" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea rows="4" name="message" id="message" placeholder="Message..."
+                                    required></textarea>
+                            </div>
+                            <button onclick="sendEmail()" type="submit" class="btn"
+                                style="width: 100%; justify-content: center;">Send Message</button>
+                        </form>
+                    </div>
                 </div>
-            </div>
-        </div>
+            </section>
 
-         <div class="sent-modal-container" id="sent-modal">
-            <div class="sent-modal">
-                <div class="sent-card">
-                    <h1>Email Sent!</h1>
-                    <p>We'll get to you as soon as possible.</p>
-                    <button onclick="closeModal()" id="close" class="button-cv">Close</button>
-                </div>
-            </div>
-         </div>
-
-         <div class="not-sent-modal-container" id="not-sent-modal">
-            <div class="not-sent-modal">
-                <div class="not-sent-card">
-                    <h1>Email Not Sent!</h1>
-                    <p>We're having issues at this moment, please try again later.</p>
-                    <button onclick="closeModal()" id="close" class="button-cv">Close</button>
-                </div>
-            </div>
-         </div>
-
-         <div class="fill-modal-container" id="fill-modal">
-            <div class="fill-modal">
-                <div class="fill-card">
-                    <h1>Missing Fields</h1>
-                    <p>Please fill in all required fields.</p>
-                    <button onclick="closeModal()" id="close" class="button-cv">Close</button>
-                </div>
-            </div>
-         </div>        
-        <span class="tag-mark">&lt/</span><span class="inner">section</span><span class="tag-mark">&gt</span>
+            <footer
+                style="border-top: 1px solid rgb(var(--g200)); padding-top: 20px; font-size: 0.85rem; color: rgb(var(--g500)); text-align: center;">
+                <p>&copy;
+                    <script>document.write(new Date().getFullYear());</script> Thristan Bumagat. Coded in VS Code,
+                    deployed with GitHub Pages & Vercel.<br>
+                    <a target="_blank" href="https://github.com/3stannn/Portfolio-dev"
+                        style="text-decoration: underline;">Source Code on GitHub</a>
+                </p>
+            </footer>
+        </main>
     </div>
 
-    <div class="scroll-up-container">
-        <a href="#home"><img id="scroll-icon" src="img/dark-mode-arrow.png" alt=""></a>
-    </div>
-
-    <div class="chatbot-container">
-        <button onclick="chatBot()"><img id="chatbot-icon" src="img/chat-light.svg" alt=""></button>
-    </div>
-
-    <div class="chatbot-modal-container" id="chatbotModalContainer">
-        <div class="chatbot-card">
-            <h2>Under Development</h2>
-            <p>Hi there! 👋🏻 Thanks for visiting my website.</p>
-            <button class="button-cv" onclick="closeChatBot()">Close</button>
+    <!-- Modals -->
+    <div class="modal-container" id="sent-modal">
+        <div class="modal-card">
+            <h2>Email Sent!</h2>
+            <p>We'll get back to you as soon as possible.</p>
+            <button onclick="closeModal()" class="btn">Close</button>
         </div>
     </div>
 
-    <div>
-        <footer>
-            <p class="footer-text">
-                &copy<script>document.write(new Date().getFullYear());</script> <br>
-                Coded in <span class="top-text">VS Code</span> and Deployed with <span class="top-text">GitHub Pages</span> & <span class="top-text">Vercel</span><br>
-                Developed by <span class="bottom-text"><a href="#">Thristan Bumagat</a></span> | Source Code Available on <span class="bottom-text"><a target="_blank" href="https://github.com/3stannn/Portfolio-dev">GitHub</a></span>
-            </p>
-        </footer>
+    <div class="modal-container" id="not-sent-modal">
+        <div class="modal-card">
+            <h2>Email Not Sent!</h2>
+            <p>We're having issues at this moment, please try again later.</p>
+            <button onclick="closeModal()" class="btn">Close</button>
+        </div>
     </div>
+
+    <div class="modal-container" id="fill-modal">
+        <div class="modal-card">
+            <h2>Missing Fields</h2>
+            <p>Please fill in all required fields.</p>
+            <button onclick="closeModal()" class="btn">Close</button>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
+
 </html>
